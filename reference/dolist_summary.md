@@ -1,30 +1,35 @@
 ## Script
 * lua
-	> * [programming in lua 3rd](https://www.lua.org/pil/contents.html)
-	> * [Lua 5.3 手册](http://cloudwu.github.io/lua53doc/manual.html)
-	> * Lua游戏开发实践指南
+> * [programming in lua 3rd](https://www.lua.org/pil/contents.html)
+> * [Lua 5.3 手册](http://cloudwu.github.io/lua53doc/manual.html)
+> * Lua游戏开发实践指南  
+
 * python
-	> [笨办法学Python](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/)
+> * [笨办法学Python](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/)  
+
 * shell Script
-	> * [鸟哥私房菜-Shell Script](http://linux.vbird.org/linux_basic/0340bashshell-scripts.php)  
-	> * [高级Bash脚本编程指南--中文版](https://www.gitbook.com/book/imcmy/advanced-bash-scripting-guide-in-chinese/details)
+> * [鸟哥私房菜-Shell Script](http://linux.vbird.org/linux_basic/0340bashshell-scripts.php)  
+> * [高级Bash脚本编程指南--中文版](https://www.gitbook.com/book/imcmy/advanced-bash-scripting-guide-in-chinese/details)
 
 ## Revision Control 
 * Git
-	> * [progit-zh-v2.1.1](https://www.gitbook.com/book/bingohuang/progit2/details)
-	> * [git](http://www.worldhello.net/gotgit/)
+> * [progit-zh-v2.1.1](https://www.gitbook.com/book/bingohuang/progit2/details)
+> * [git](http://www.worldhello.net/gotgit/)  
+
 * Github
-	> * [gotgithub](http://www.worldhello.net/gotgithub/)
-> Extension: 
->> * [GitBook](https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html)
->> * GitPage
+> * [gotgithub](http://www.worldhello.net/gotgithub/)  
+
+* Extension: 
+> * [GitBook](https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html)
+> * GitPage
 
 ### Run program: edit->build->compile->debug
 #### 1. Editor
 * Vim
-	> [鸟哥私房菜-Vim](http://linux.vbird.org/linux_basic/0310vi.php)
+> * [鸟哥私房菜-Vim](http://linux.vbird.org/linux_basic/0310vi.php)  
+
 * Markdown  
-	> [markdown语法说明(简体中文版)](http://wowubuntu.com/markdown/#philosophy)
+> * [markdown语法说明(简体中文版)](http://wowubuntu.com/markdown/#philosophy)
 
 #### 2. Build
 > * [Makefile](http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile)
