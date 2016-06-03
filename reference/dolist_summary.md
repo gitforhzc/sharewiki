@@ -33,14 +33,14 @@ Run program: edit->build->compile->debug
 	> * [markdown语法说明(简体中文版)](http://wowubuntu.com/markdown/#philosophy)
 
 ### 2. Build
-* Make
+* make
 	> * [Makefile](http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile)
 
 ### 3. compile
-* Gcc
+* gcc
 	> * [gcc新手入门](http://wiki.ubuntu.org.cn/Gcchowto)
 	> * [gcc中使用 -I 和 -L 引入外部头文件和库文件](http://blog.csdn.net/zklth/article/details/5974371)
 
 ### 4. debug
-* Gdb
+* gdb
 	> * [用GDB调试程序](http://wiki.ubuntu.org.cn/%E7%94%A8GDB%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F)
