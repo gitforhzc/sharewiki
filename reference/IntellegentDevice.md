@@ -97,23 +97,21 @@
 * Manager
 	* 绿色守护
 	* 岛island
-	* SD Maid
+	* 全能工具箱
+		* SD Maid
+		* 应用备份还原
+		* 智能锁专业版
+		* 二维码
 * Assist
-	* 手势
-	* 验证码助手
-	* 以图搜图
-	* 指南针
-	* Mobizen
+	* 导航层
 	* SafeinCloud
-	* snapseed
-	* universal copy
-	* 极简汇率
 * Alarm
 	* 时钟
 	* 睡眠跟踪
 * App Market
 	* Google play store
 	* 酷市场
+	* 酷安装
 	* apkpure
 	* 手机乐园
 	* 虫虫助手
@@ -122,8 +120,6 @@
 	* wiki
 	* chrome
 	* flynx
-* Backup
-	* 应用备份还原
 * Daily
 	* 种子习惯
 	* offtime
@@ -153,11 +149,20 @@
 	* geometric weather
 	* 来电信息
 	* wephone
+	* 指南针
+	* 极简汇率
 * Media 
+	* snapseed
+	* 以图搜图
+	* Mobizen
 	* 网易云音乐
 	* spotify
 	* Musixmatch
 	* QQ影音
+	* 超级视频
+	* VR
+		* 橙子VR
+		* 虚虚VR助手
 * NetSchool
 	* 网易公开课
 	* 网易云课堂
@@ -178,6 +183,11 @@
 	* 谷歌翻译
 	* 快速翻译
 	* 欧路词典
+* Text
+	* inputting+
+	* 剪纸堆
+	* universal copy
+	* 验证码助手
 * Wifi
 	* 极路由
 	* wifi万能钥匙
