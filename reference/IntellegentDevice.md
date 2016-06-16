@@ -103,7 +103,7 @@
 		* 智能锁专业版
 		* 二维码
 * Assist
-	* 导航层
+	* 全能手势
 	* SafeinCloud
 * Alarm
 	* 时钟
