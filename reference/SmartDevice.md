@@ -58,6 +58,7 @@
 		* github
 	* Virtual Machine
 		* VirtualBox
+		* cgywin-86-64
 	* Others
 		* doxygen
 		* RegexBuddy
@@ -91,7 +92,8 @@
 		* 智能快递
 		* 优酷
 		* 必应词典
-		* 公共交通
+		* 公共交通  
+		
 #### Android N
 	all of these backed up on Google Drive and mobile disk
 * Manager
