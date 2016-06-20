@@ -58,7 +58,7 @@
 		* github
 	* Virtual Machine
 		* VirtualBox
-		* cgywin-86-64
+		* cygwin-86-64
 	* Others
 		* doxygen
 		* RegexBuddy
