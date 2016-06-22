@@ -16,11 +16,11 @@
   `pip install shadowsocks`  
 
 - shadowsocks配置文件
-```
 /usr/local/etc/ssconfig.json
+```
 {
         "server":"remote-shadowsocks-server-ip-addr",
-        "server_port":443,
+        "server_port":remote-port,
         "local_address":"127.0.0.1",
         "local_port":1080,
         "password":"your-passwd",
@@ -29,7 +29,9 @@
         "fast_open":false,
         "workers":1
 }
-//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]
+```
+
+>//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]
 //server_port   服务端端口，一般为443
 //local_address 本地监听地址，缺省为127.0.0.1
 //local_port    本地监听端口，一般为1080
@@ -37,23 +39,25 @@
 //timeout       超时时间（秒）
 //method        加密方法，默认的table是一种不安全的加密，此处首推aes-256-cfb
 //fast_open 是否启用TCP-Fast-Open
-//wokers        worker数量，如果不理解含义不要改
-``` 
+//wokers        worker数量，如果不理解含义不要改 
 
 - 启动Shadowsocks客户端  
-   在config.json所在目录下运行sslocal即可；若需指定配置文件的位置：  
    `sslocal -c /usr/local/etc/ssconfig.json`  
    或手动制定参数运行：  
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
    实现自启并且使之后台运行，关闭终端也不影响：  
-1. gnome
+    1. gnome  
+
 	>   `yum install gnome-tweak-tool`  
 	>   `gnome-session-properties`  
-	>   `click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json`  
-2. 开机自启脚本
-	> cd /etc/rc.local
-	> vim rc.local
-	> sslocal -c /usr/local/etc/ssconfig.json
+	>   `click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json`    
+
+    2. 开机自启脚本  
+
+    > cd /etc/rc.local  
+    > vim rc.local  
+    > sslocal -c /usr/local/etc/ssconfig.json  
+
 也有图形化的客户端shadowsocks-gui@gitHub、shadowsocks-qt5等，可到源中下载安装。
 
 - 配置浏览器(firefox)  
