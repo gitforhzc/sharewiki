@@ -17,7 +17,7 @@
 
 - shadowsocks配置文件
 ```
-/etc/shadowsocks/config.json
+/usr/local/etc/ssconfig.json
 {
         "server":"remote-shadowsocks-server-ip-addr",
         "server_port":443,
@@ -42,13 +42,18 @@
 
 - 启动Shadowsocks客户端  
    在config.json所在目录下运行sslocal即可；若需指定配置文件的位置：  
-   `sslocal -c /etc/shadowsocks/config.json`  
+   `sslocal -c /usr/local/etc/ssconfig.json`  
    或手动制定参数运行：  
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
    实现自启并且使之后台运行，关闭终端也不影响：  
-   `yum install gnome-tweak-tool`  
-   `gnome-session-properties`  
-   `click 'Add', command: sslocal -c /etc/shadowsocks/config.json`  
+1. gnome
+	>   `yum install gnome-tweak-tool`  
+	>   `gnome-session-properties`  
+	>   `click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json`  
+2. 开机自启脚本
+	> cd /etc/rc.local
+	> vim rc.local
+	> sslocal -c /usr/local/etc/ssconfig.json
 也有图形化的客户端shadowsocks-gui@gitHub、shadowsocks-qt5等，可到源中下载安装。
 
 - 配置浏览器(firefox)  
