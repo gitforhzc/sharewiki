@@ -9,14 +9,13 @@
 * [参考](#参考)  
 
 ### 正文
-- 平台： centOS7
+- 平台： centOS7 / Ubuntu / deepin
 - 安装shadowsocks  
   `yum install python-setuptools`  
   `easy_install pip`    
   `pip install shadowsocks`  
 
-- shadowsocks配置文件
-/usr/local/etc/ssconfig.json
+- shadowsocks配置文件/usr/local/etc/ssconfig.json
 ```
 {
         "server":"remote-shadowsocks-server-ip-addr",
@@ -46,14 +45,14 @@
    或手动制定参数运行：  
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
    实现自启并且使之后台运行，关闭终端也不影响：  
-    1. gnome  
-	>   `yum install gnome-tweak-tool`  
-	>   `gnome-session-properties`  
-	>   `click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json`    
-    2. 开机自启脚本  
-    > cd /etc/rc.local  
-    > vim rc.local  
-    > sslocal -c /usr/local/etc/ssconfig.json  
+    * gnome  
+    yum install gnome-tweak-tool   
+    gnome-session-properties    
+    click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json      
+    * 开机自启脚本  
+    cd /etc/rc.local  
+    vim rc.local  
+    sslocal -c /usr/local/etc/ssconfig.json  #append
 
 也有图形化的客户端shadowsocks-gui@gitHub、shadowsocks-qt5等，可到源中下载安装。
 
@@ -67,6 +66,7 @@
   3. 启用浏览器全局代理，默认代理为shadowsocks  
 
 - 配置终端全局代理   
+    ××NOTE:慎选provixy版本××
 参见[CentOS命令行下使用代理：Shadowsocks+privoxy+redsocks实现全局代理](https://laowang.me/centos-global-privoxy.html)
 
 - 参考  
