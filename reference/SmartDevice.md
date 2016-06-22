@@ -201,10 +201,11 @@
 	
 * Ubuntu  
 
-* Deepin
+* Deepin  
     refer to [deepin百科](https://wiki.deepin.org/index.php?title=%E9%A6%96%E9%A1%B5)
     * Download 
         * Xtreme Dwnload Manager
+
 ### 极路由
 * 插入SD卡
 * 后台设置
