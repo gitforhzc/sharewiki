@@ -31,15 +31,15 @@
 }
 ```
 
->//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]
-//server_port   服务端端口，一般为443
-//local_address 本地监听地址，缺省为127.0.0.1
-//local_port    本地监听端口，一般为1080
-//password  用以加密的密匙
-//timeout       超时时间（秒）
-//method        加密方法，默认的table是一种不安全的加密，此处首推aes-256-cfb
-//fast_open 是否启用TCP-Fast-Open
-//wokers        worker数量，如果不理解含义不要改 
+>//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]  
+//server_port   服务端端口，一般为443  
+//local_address 本地监听地址，缺省为127.0.0.1  
+//local_port    本地监听端口，一般为1080  
+//password  用以加密的密匙  
+//timeout       超时时间（秒）  
+//method          加密方法，默认的table是一种不安全的加密，此处首推aes-256-cfb  
+//fast_open 是否启用TCP-Fast-Open  
+//wokers        worker数量，如果不理解含义不要改   
 
 - 启动Shadowsocks客户端  
    `sslocal -c /usr/local/etc/ssconfig.json`  
@@ -47,13 +47,10 @@
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
    实现自启并且使之后台运行，关闭终端也不影响：  
     1. gnome  
-
 	>   `yum install gnome-tweak-tool`  
 	>   `gnome-session-properties`  
 	>   `click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json`    
-
     2. 开机自启脚本  
-
     > cd /etc/rc.local  
     > vim rc.local  
     > sslocal -c /usr/local/etc/ssconfig.json  
