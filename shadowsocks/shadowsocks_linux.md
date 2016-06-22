@@ -66,7 +66,7 @@
   3. 启用浏览器全局代理，默认代理为shadowsocks  
 
 - 配置终端全局代理   
-    ××NOTE:慎选provixy版本××
+    **NOTE:慎选provixy版本**  
 参见[CentOS命令行下使用代理：Shadowsocks+privoxy+redsocks实现全局代理](https://laowang.me/centos-global-privoxy.html)
 
 - 参考  
