@@ -40,7 +40,7 @@
 //fast_open 是否启用TCP-Fast-Open  
 //wokers        worker数量，如果不理解含义不要改   
 
-- 启动Shadowsocks客户端  
+- 连接shadowsocks服务器  
    `sslocal -c /usr/local/etc/ssconfig.json`  
    或手动制定参数运行：  
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
