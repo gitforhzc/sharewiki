@@ -20,9 +20,9 @@
 	1. 备份对象  
 		/home	# 家目录：个人资料  
 		/usr	# 软件  
-		/etc	# 系统设置
-		/boot	# 开机引导程序
-		/root	# root用户的家目录  
+		/etc	# 系统设置  
+		/boot	# 开机引导程序  
+		/root	# root用户的家目录    
 
 	2. tar打包并压缩目录以备份  
 		tar -jpcv -f /media/hzc-deepin/backups/home.tar.bz2 /home  
