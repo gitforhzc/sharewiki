@@ -5,7 +5,7 @@
 ## [备份策略][1]  
 * [挂载][2]  
 	mkdir /media/hzc-deepin/backups # 创建挂载的空目录  
-	mount /dev/sda5 /media/hzc-deepin/backups # [挂载][3]  
+	mount /dev/sda5 /media/hzc-deepin/backups # 挂载  
 * 系统备份[dump][3]  
 	1. 备份对象  
 		根目录/  
