@@ -31,7 +31,7 @@
 		tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot  
 		tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
 
-	3. tar -N 'time'以差异备份
+	3. tar -N 'time'以差异备份  
 		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/homediff.tar.bz2 /home  
 		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/usrdiff.tar.bz2 /usr  
 		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/etcdiff.tar.bz2 /etc  
