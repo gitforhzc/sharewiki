@@ -1,6 +1,6 @@
 ## 分区环境
 /sda4挂载在根目录/  
-/sda5为windows系统的分区，可挂载在Linux的目录（如/media/hzc-deepin/backups  
+/sda5为windows系统的分区，可挂载在Linux的目录（如/media/hzc-deepin/backups)  
 
 ## [备份策略][1]  
 * [挂载][2]  
@@ -14,7 +14,7 @@
 		dump -0u -f /media/hzc-deepin/backups/all.bak / 
 
 	3. 累积备份  
-		dump -1u -f /media/hzc-deepin/backups/all.bak / 
+		dump -1u -f /media/hzc-deepin/backups/alldiff.bak / 
 
 * 关键目录备份[tar][4]
 	1. 备份对象  
@@ -25,11 +25,18 @@
 		/root	# root用户的家目录  
 
 	2. tar打包并压缩目录以备份  
-		tar -jpcv -f /media/hzc-deepin/backups/home.tar.gz /home
-		tar -jpcv -f /media/hzc-deepin/backups/usr.tar.gz /usr
-		tar -jpcv -f /media/hzc-deepin/backups/etc.tar.gz /etc
-		tar -jpcv -f /media/hzc-deepin/backups/boot.tar.gz /boot
-		tar -jpcv -f /media/hzc-deepin/backups/root.tar.gz /root
+		tar -jpcv -f /media/hzc-deepin/backups/home.tar.bz2 /home  
+		tar -jpcv -f /media/hzc-deepin/backups/usr.tar.bz2 /usr  
+		tar -jpcv -f /media/hzc-deepin/backups/etc.tar.bz2 /etc  
+		tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot  
+		tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
+
+	3. tar -N 'time'以差异备份
+		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/homediff.tar.bz2 /home  
+		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/usrdiff.tar.bz2 /usr  
+		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/etcdiff.tar.bz2 /etc  
+		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/bootdiff.tar.bz2 /boot  
+		tar -N '2016-06-23' -jpcv -f /media/hzc-deepin/backups/rootdiff.tar.bz2 /root  
 
 
 [1]: http://linux.vbird.org/linux_basic/0580backup.php#backup_type
