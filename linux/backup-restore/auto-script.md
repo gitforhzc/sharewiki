@@ -1,5 +1,5 @@
 ## 自动化shell脚本
-* 批量执行git提交命令
+* 批量执行git提交命令  
 	file: commit.sh
 ```
 #!/bin/bash
@@ -10,8 +10,8 @@ git push origin maste
 
 ```
 
-* 备份所使用的命令，以待crontab使用
-	file:~/auto-full-backup.sh
+* 备份所使用的命令，以待crontab使用  
+> file:~/auto-full-backup.sh
 ```
 #!/bin/bash
 umount /dev/sda5
@@ -27,8 +27,7 @@ tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot
 tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
 
 ```
-
-	file: ～/auto-diff-backup.sh
+> file: ～/auto-diff-backup.sh
 ```
 #!/bin/bash 
 mountdir=/media/hzc-deepin/backups
@@ -50,7 +49,7 @@ done
 ```
 
 
-## [/etc/fstab][1]开机自动挂载
+## [开机自动挂载][1]/etc/fstab
 ```
 # /dev/sda5 
 UUID="0004D84500007FB1" /media/hzc-deepin/存储中转站
@@ -59,7 +58,7 @@ ntfs        rw.relatime,date=ordered    0 1
 ```
 
 
-## [/etc/crontab][2]定时自动备份
+## 定时自动备份[2]/etc/crontab
 ```
 crontab -e   
 
