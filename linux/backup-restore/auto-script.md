@@ -7,7 +7,7 @@
 
 git add *
 git commit -m 'default'
-git push origin maste
+git push origin master
 
 ```
 
@@ -76,7 +76,7 @@ crontab -e
   0 0  *    *   *    ~/auto-diff-backup.sh
 
 ```
-[1]: http://linux.vbird.org/linux_basic/0340bashshell-scripts.php#script_be
+[1]: http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
 
 [2]: http://linux.vbird.org/linux_basic/0230filesystem.php#bootup
 
