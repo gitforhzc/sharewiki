@@ -94,11 +94,11 @@ crontab -e
 # file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    /root/script/auto-full-backup.sh **> /home/hzc-deepin/crond-weekly.log 2>&1**
+  0 0  *   *    1    /root/script/auto-full-backup.sh > /home/hzc-deepin/crond-weekly.log 2>&1
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/script/auto-diff-backup.sh **> /home/hzc-deepin/crond-daily.log 2>&1**
+  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1
 
 ```
 
