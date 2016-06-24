@@ -11,7 +11,8 @@ git push origin maste
 ```
 
 * 备份所使用的命令，以待crontab使用  
-file:~/auto-full-backup.sh
+
+	file:~/auto-full-backup.sh
 ```
 #!/bin/bash
 umount /dev/sda5
