@@ -1,7 +1,8 @@
 ## 自动化shell脚本
 * 批量执行git提交命令  
-	file: commit.sh
+	
 ```
+# file: ./commit.sh
 #!/bin/bash
 
 git add *
@@ -11,8 +12,9 @@ git push origin maste
 ```
 
 * 备份所使用的命令，以待crontab使用  
-	file:~/auto-full-backup.sh
+	
 ```
+# file:~/auto-full-backup.sh
 #!/bin/bash
 umount /dev/sda5
 mkdir /media/hzc-deepin/backups # 创建挂载的空目录  
@@ -27,8 +29,9 @@ tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot
 tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
 
 ```
-	file: ～/auto-diff-backup.sh
+
 ```
+# file: ～/auto-diff-backup.sh
 #!/bin/bash 
 mountdir=/media/hzc-deepin/backups
 date=$(date +%Y-%m-%d)
