@@ -16,6 +16,10 @@ git push origin master
 ```
 # file:~/auto-full-backup.sh
 #!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH
+echo ${PATH}
+
 umount /dev/sda5
 mkdir /media/hzc-deepin/backups # 创建挂载的空目录  
 mount /dev/sda5 /media/hzc-deepin/backups # 挂载  
@@ -33,6 +37,11 @@ tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root
 ```
 # file: ～/auto-diff-backup.sh
 #!/bin/bash 
+
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH
+echo ${PATH}
+
 mountdir=/media/hzc-deepin/backups
 date=$(date +%Y-%m-%d)
 
@@ -85,11 +94,11 @@ crontab -e
 # file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    /root/script/auto-full-backup.sh > /home/hzc-deepin/crond-weekly.log 2>&1
+  0 0  *   *    1    /root/script/auto-full-backup.sh **> /home/hzc-deepin/crond-weekly.log 2>&1**
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1
+  0 0  *    *   *    /root/script/auto-diff-backup.sh **> /home/hzc-deepin/crond-daily.log 2>&1**
 
 ```
 
