@@ -28,7 +28,7 @@ tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root
 
 ```
 
-file: ～/auto-diff-backup.sh
+	file: ～/auto-diff-backup.sh
 ```
 #!/bin/bash 
 mountdir=/media/hzc-deepin/backups
@@ -58,7 +58,7 @@ ntfs        rw.relatime,date=ordered    0 1
 ```
 
 
-## 定时自动备份[2]/etc/crontab
+## [定时自动备份][2]/etc/crontab
 ```
 crontab -e   
 
