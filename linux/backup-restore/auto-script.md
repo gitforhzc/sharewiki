@@ -53,7 +53,7 @@ done
 
 ## [开机自动挂载][2]
 ```
-vim /etc/fstab
+sudo vim /etc/fstab
 
 # /dev/sda5 
 UUID="0004D84500007FB1" /media/hzc-deepin/存储中转站
@@ -64,22 +64,43 @@ ntfs        rw.relatime,date=ordered    0 1
 
 ## [定时自动备份][3]
 ```
+su -
 crontab -e   
 
-# file: /var/spool/cron/...
+# file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    ~/auto-full-backup.sh
+  0 0  *   *    1    /root/script/auto-full-backup.sh
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    ~/auto-diff-backup.sh
+  0 0  *    *   *    /root/script/auto-diff-backup.sh
 
 ```
+重定向输出内容，查看crontab任务是否执行成功。[参考](http://blog.csdn.net/ithomer/article/details/6817019)
+```
+su -
+crontab -e   
+
+# file: /var/spool/cron/crontab/root
+# full backup at 00:00 every monday  
+# m h  dom mon dow   command
+  0 0  *   *    1    /root/script/auto-full-backup.sh > /home/hzc-deepin/crond-weekly.log 2>&1
+
+# diff backup at 00:00 every day
+# m h  dom mon dow   command
+  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1
+
+```
+
+
+
 [1]: http://linux.vbird.org/linux_basic/0340bashshell-scripts.php
 
 [2]: http://linux.vbird.org/linux_basic/0230filesystem.php#bootup
 
 [3]: http://linux.vbird.org/linux_basic/0430cron.php#whatiscron_type
+
+
 
 
