@@ -1,4 +1,4 @@
-## 自动化shell脚本
+## [自动化shell script][1]
 * 批量执行git提交命令  
 	
 ```
@@ -51,7 +51,7 @@ done
 ```
 
 
-## [开机自动挂载][1]/etc/fstab
+## [开机自动挂载][2]/etc/fstab
 ```
 # /dev/sda5 
 UUID="0004D84500007FB1" /media/hzc-deepin/存储中转站
@@ -60,7 +60,7 @@ ntfs        rw.relatime,date=ordered    0 1
 ```
 
 
-## [定时自动备份][2]/etc/crontab
+## [定时自动备份][3]/etc/crontab
 ```
 crontab -e   
 
@@ -73,9 +73,10 @@ crontab -e
   0 0  *    *   *    ~/auto-diff-backup.sh
 
 ```
+[1]: http://linux.vbird.org/linux_basic/0340bashshell-scripts.php#script_be
 
-[1]: http://linux.vbird.org/linux_basic/0230filesystem.php#mount
+[2]: http://linux.vbird.org/linux_basic/0230filesystem.php#mount
 
-[2]: http://linux.vbird.org/linux_basic/0430cron.php#whatiscron_type
+[3]: http://linux.vbird.org/linux_basic/0430cron.php#whatiscron_type
 
 
