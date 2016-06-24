@@ -51,8 +51,10 @@ done
 ```
 
 
-## [开机自动挂载][2]/etc/fstab
+## [开机自动挂载][2]
 ```
+vim /etc/fstab
+
 # /dev/sda5 
 UUID="0004D84500007FB1" /media/hzc-deepin/存储中转站
 ntfs        rw.relatime,date=ordered    0 1
@@ -60,10 +62,11 @@ ntfs        rw.relatime,date=ordered    0 1
 ```
 
 
-## [定时自动备份][3]/etc/crontab
+## [定时自动备份][3]
 ```
 crontab -e   
 
+# file: /var/spool/cron/...
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
   0 0  *   *    1    ~/auto-full-backup.sh
@@ -75,7 +78,7 @@ crontab -e
 ```
 [1]: http://linux.vbird.org/linux_basic/0340bashshell-scripts.php#script_be
 
-[2]: http://linux.vbird.org/linux_basic/0230filesystem.php#mount
+[2]: http://linux.vbird.org/linux_basic/0230filesystem.php#bootup
 
 [3]: http://linux.vbird.org/linux_basic/0430cron.php#whatiscron_type
 
