@@ -10,7 +10,8 @@ git push origin maste
 
 ```
 
-* 备份所使用的命令，以待crontab使用  
+* 备份所使用的命令，以待crontab使用
+  
 > file:~/auto-full-backup.sh
 ```
 #!/bin/bash
@@ -27,6 +28,7 @@ tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot
 tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
 
 ```
+
 > file: ～/auto-diff-backup.sh
 ```
 #!/bin/bash 
@@ -45,7 +47,6 @@ do
     tar -N ${date} -jpcv -f ${dir}/${target}diff-${date}.tar.bz2 /${target}    
 
 done
-
 ```
 
 
