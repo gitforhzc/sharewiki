@@ -66,8 +66,31 @@
   3. 启用浏览器全局代理，默认代理为shadowsocks  
 
 - 配置终端全局代理   
-    **NOTE:慎选provixy版本**  
 参见[CentOS命令行下使用代理：Shadowsocks+privoxy+redsocks实现全局代理](https://laowang.me/centos-global-privoxy.html)
+``` 
+1. 安装
+su -
+apt-get install privoxy
+2. 配置
+vim /etc/privoxy/config
+783G	# 找到 783行
+listen-address 127.0.0.1:8118
+# 去掉前面的注释符号，后面的8118端口可以随便改，但不要和别的服务冲突
+1336G	# 再找到 1336
+forward-socks5t / 127.0.0.1:1080 .
+# 去掉前面的注释符号，后面的1080端口要对应Shadowsocks服务里面的配置，要一致
+exit	# 退出root用户
+3. 代理
+vim ~/.profile
+# 添加以下几行
+export http_proxy=http://127.0.0.1:8118
+export ftp_proxy=http://127.0.0.1:8118
+4. 开机自启服务
+vim /etc/rc.local
+sslocal -c /usr/local/etc/ssconfig.json
+service privoxy start
+5. 重启
+```
 
 - 参考  
 [1][linux配置shadowsocks客户端](http://my.oschina.net/u/1432769/blog/619651)  
