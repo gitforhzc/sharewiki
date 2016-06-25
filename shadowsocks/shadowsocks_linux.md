@@ -50,8 +50,7 @@
     gnome-session-properties    
     click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json      
     * 开机自启脚本  
-    cd /etc/rc.local  
-    vim rc.local  
+    vim /etc/rc.local  
     sslocal -c /usr/local/etc/ssconfig.json  #append
 
 也有图形化的客户端shadowsocks-gui@gitHub、shadowsocks-qt5等，可到源中下载安装。
