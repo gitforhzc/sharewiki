@@ -36,26 +36,26 @@ tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root
 
 ```
 # file: ～/auto-diff-backup.sh
-#!/bin/bash 
-
+#!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH
 echo ${PATH}
 
 mountdir=/media/hzc-deepin/backups
-date=$(date +%Y-%m-%d)
+yesterday=$(date --date='1 days ago' +%Y-%m-%d)
+today=$(date +%Y-%m-%d)
 
 umount /dev/sda5
 mkdir ${mountdir} # 创建挂载的空目录
 mount /dev/sda5 ${mountdir} # 挂载  
 
-dump -1u \
-    -f ${mountdir}/alldiff-${date}.bak /
+ dump -1u \
+    -f ${mountdir}/alldiff-${today}.bak /
 
 for target in home usr etc root boot
 do
-    tar -N ${date} -jpcv -f ${dir}/${target}diff-${date}.tar.bz2 /${target}    
-
+    tar -N ${yesterday} -jpcv -f ${mountdir}/${target}diff-${today}.tar.bz2 /${target}    
+    
 done
 ```
 
@@ -98,7 +98,7 @@ crontab -e
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1
+  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1 
 
 ```
 
