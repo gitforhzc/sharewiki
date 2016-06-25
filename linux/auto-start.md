@@ -15,3 +15,7 @@ init根据配置文件继续引导过程，启动其它进程。通常情况下�
 /.bash_login、
 /.profile，
 但只执行最先找到的一个。因此，只需根据实际需要在上述文件中加入命令就可以实现用户登录时自动运行某些程序。
+
+
+参考:
+[1]: https://wiki.deepin.org/index.php?title=%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F
