@@ -1,0 +1,4 @@
+/
+/home
+/usr
+/boot
