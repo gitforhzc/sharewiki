@@ -1,4 +1,5 @@
-/
-/home
-/usr
-/boot
+/  
+/home  
+/usr  
+/boot  
+swap  
