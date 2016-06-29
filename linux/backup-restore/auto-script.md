@@ -20,17 +20,21 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH
 echo ${PATH}
 
+mountdir=/media/hzc/mid-storage
+
 umount /dev/sda5
-mkdir /media/hzc-deepin/backups # 创建挂载的空目录  
-mount /dev/sda5 /media/hzc-deepin/backups # 挂载  
+mkdir ${mountdir} # 创建挂载的空目录  
+mount /dev/sda5 ${mountdir} # 挂载  
 
-dump -0u -f /media/hzc-deepin/backups/all.bak /   
+dump -0u -f ${mountdir}/all.bak /
 
-tar -jpcv -f /media/hzc-deepin/backups/home.tar.bz2 /home  
-tar -jpcv -f /media/hzc-deepin/backups/usr.tar.bz2 /usr  
-tar -jpcv -f /media/hzc-deepin/backups/etc.tar.bz2 /etc  
-tar -jpcv -f /media/hzc-deepin/backups/boot.tar.bz2 /boot  
-tar -jpcv -f /media/hzc-deepin/backups/root.tar.bz2 /root  
+tar -jpcv -f ${mountdir}/home.tar.bz2 /home
+tar -jpcv -f ${mountdir}/usr.tar.bz2 /usr
+tar -jpcv -f ${mountdir}/etc.tar.bz2 /etc
+tar -jpcv -f ${mountdir}/boot.tar.bz2 /boot
+tar -jpcv -f ${mountdir}/root.tar.bz2 /root
+
+exit 0
 
 ```
 
