@@ -1,5 +1,5 @@
 #!/bin/bash
 
-git add *
+git add --all *
 git commit -m 'default'
 git push origin master
