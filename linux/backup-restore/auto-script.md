@@ -45,7 +45,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH
 echo ${PATH}
 
-mountdir=/media/hzc-deepin/backups
+mountdir=/media/hzc/mid-storage
 yesterday=$(date --date='1 days ago' +%Y-%m-%d)
 today=$(date +%Y-%m-%d)
 
@@ -69,7 +69,7 @@ done
 sudo vim /etc/fstab
 
 # /dev/sda5 
-UUID="0004D84500007FB1" /media/hzc-deepin/存储中转站
+UUID="0004D84500007FB1" /media/hzc/mid-storage
 ntfs        rw.relatime,date=ordered    0 1
 
 ```
@@ -83,11 +83,11 @@ crontab -e
 # file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    /root/script/auto-full-backup.sh
+  0 0  *   *    1    /root/shell-scripts/auto-full-backup.sh
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/script/auto-diff-backup.sh
+  0 0  *    *   *    /root/shell-scripts/auto-diff-backup.sh
 
 ```
 重定向输出内容，查看crontab任务是否执行成功。[参考](http://blog.csdn.net/ithomer/article/details/6817019)
@@ -98,11 +98,11 @@ crontab -e
 # file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    /root/script/auto-full-backup.sh > /home/hzc-deepin/crond-weekly.log 2>&1
+  0 0  *   *    1    /root/shell-scripts/auto-full-backup.sh > /home/hzc/crond-weekly.log 2>&1
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/script/auto-diff-backup.sh > /home/hzc-deepin/crond-daily.log 2>&1 
+  0 0  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1 
 
 ```
 

@@ -72,10 +72,10 @@ su -
 apt-get install privoxy
 2. 配置
 vim /etc/privoxy/config
-783G	# 找到 783行
+761G	# 找到 761行
 listen-address 127.0.0.1:8118
 # 去掉前面的注释符号，后面的8118端口可以随便改，但不要和别的服务冲突
-1336G	# 再找到 1336
+1314G	# 再找到 1314
 forward-socks5t / 127.0.0.1:1080 .
 # 去掉前面的注释符号，后面的1080端口要对应Shadowsocks服务里面的配置，要一致
 exit	# 退出root用户
