@@ -1,8 +1,7 @@
 ## transfer data to phone
 1. setup
 > sudo apt-get install samba  
-> sudo smbpasswd -a hzc	# hzc must be a linux-username  
-> <input password>  
+> sudo smbpasswd -a hzc	# hzc must be a linux-username    
 
 2. share file
 > 文件夾右键-> 本地网络共享-> 共享此目录
