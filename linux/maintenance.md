@@ -15,11 +15,14 @@
 
 
 ## source
-* add ppa source  
+* add ppa source
 > example: see blueman.md  
 > sudo apt-get install python-software-properties  	# for apt-apt-repository  
 > sudo add-apt-repository ppa:user/ppa-name  		# add * to source.list  
 > sudo apt-get update  
+
+* add deb source
+>
 
 
 ## system information
