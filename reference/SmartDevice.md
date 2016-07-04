@@ -176,6 +176,9 @@
 	* 静读天下
 	* 多看阅读
 	* Pocket
+* Remote
+	* juiceSSH
+	* ES文件浏览器	# samba
 * Transportation
 	* 百度地图
 	* 谷歌地图
@@ -202,6 +205,7 @@
 * Ubuntu  
 	* chrome	# syn data
 	* httrack	# download website
+	* 
 * Deepin  
     refer to [deepin百科](https://wiki.deepin.org/index.php?title=%E9%A6%96%E9%A1%B5)
     * Download 

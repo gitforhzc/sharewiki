@@ -11,7 +11,7 @@ git push origin master
 
 ```
 
-* 备份所使用的命令，以待crontab使用  
+* 备份所使用的命令，以待crond使用  
 	
 ```
 # file:~/auto-full-backup.sh
@@ -21,18 +21,19 @@ export PATH
 echo ${PATH}
 
 mountdir=/media/hzc/mid-storage
+workdir=${mountdir}/customed-backups/full-backup
 
 umount /dev/sda5
 mkdir ${mountdir} # 创建挂载的空目录  
 mount /dev/sda5 ${mountdir} # 挂载  
+mkdir -p ${workdir}
 
-dump -0u -f ${mountdir}/all.bak /
+dump -0u -f ${workdir}/all.bak / 
 
-tar -jpcv -f ${mountdir}/home.tar.bz2 /home
-tar -jpcv -f ${mountdir}/usr.tar.bz2 /usr
-tar -jpcv -f ${mountdir}/etc.tar.bz2 /etc
-tar -jpcv -f ${mountdir}/boot.tar.bz2 /boot
-tar -jpcv -f ${mountdir}/root.tar.bz2 /root
+for target in home usr etc boot root
+do
+    tar -jpcv -f ${workdir}/${target}.tar.bz2 /${target}
+done
 
 exit 0
 
@@ -48,19 +49,23 @@ echo ${PATH}
 mountdir=/media/hzc/mid-storage
 yesterday=$(date --date='1 days ago' +%Y-%m-%d)
 today=$(date +%Y-%m-%d)
+workdir=${mountdir}/customed-backups/diff-${today}-backup
 
 umount /dev/sda5
 mkdir ${mountdir} # 创建挂载的空目录
 mount /dev/sda5 ${mountdir} # 挂载  
+mkdir -p  ${workdir}
 
- dump -1u \
-    -f ${mountdir}/alldiff-${today}.bak /
+dump -1u \
+    -f ${workdir}/alldiff-${today}.backup / 
 
 for target in home usr etc root boot
 do
-    tar -N ${yesterday} -jpcv -f ${mountdir}/${target}diff-${today}.tar.bz2 /${target}    
+    tar -N ${yesterday} -jpcv -f ${workdir}/${target}diff-${today}.tar.bz2 /${target}    
     
 done
+
+exit 0
 ```
 
 
@@ -76,21 +81,7 @@ ntfs        rw.relatime,date=ordered    0 1
 
 
 ## [定时自动备份][3]
-```
-su -
-crontab -e   
-
-# file: /var/spool/cron/crontab/root
-# full backup at 00:00 every monday  
-# m h  dom mon dow   command
-  0 0  *   *    1    /root/shell-scripts/auto-full-backup.sh
-
-# diff backup at 00:00 every day
-# m h  dom mon dow   command
-  0 0  *    *   *    /root/shell-scripts/auto-diff-backup.sh
-
-```
-重定向输出内容，查看crontab任务是否执行成功。[参考](http://blog.csdn.net/ithomer/article/details/6817019)
+> 重定向输出内容，查看crontab任务是否执行成功。[参考](http://blog.csdn.net/ithomer/article/details/6817019)
 ```
 su -
 crontab -e   
@@ -105,6 +96,8 @@ crontab -e
   0 0  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1 
 
 ```
+
+
 
 
 

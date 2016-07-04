@@ -28,9 +28,12 @@
 ## system information
 * hardware  
 > sudo lshw	# 查看当前硬件信息  
-> free		# 查看当前的内存使用情况  
-> df -h		# 查看硬盘剩余空间  
+> free		# 查看当前的内存使用情况    
 > lsblk		# 查看块设备（硬盘分区）  
+> df -h		# 查看文件系统  
+> uname -a	# 查看内核版本
+> lsb_release	# 查看发行版本
+
 
 * network # 有线网卡eth0,无线网卡wlan0  
 > ifconfig eth0 |awk '/inet/ {split($2,x,":");print x[2]}'	# 查看当前IP地址  
