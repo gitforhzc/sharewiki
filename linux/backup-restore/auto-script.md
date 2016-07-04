@@ -82,11 +82,9 @@ ntfs        rw.relatime,date=ordered    0 1
 
 ## [定时自动备份][3]
 > 重定向输出内容，查看crontab任务是否执行成功。[参考](http://blog.csdn.net/ithomer/article/details/6817019)  
-
+> su -
+> crontab -e   
 ```
-su -
-crontab -e   
-
 # file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
