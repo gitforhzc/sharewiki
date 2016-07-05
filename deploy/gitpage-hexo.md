@@ -33,15 +33,14 @@ $ npm install
 ```
 
 ### config
-> refer to [NexT](http://theme-next.iissnan.com/)  
-> file: <folder>/_config.yml  
+> refer to [NexT](http://theme-next.iissnan.com/getting-started.html)  
 
 * theme 
 ```
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape-plus
+theme: next
 ```
 
 * deploy
@@ -71,10 +70,11 @@ hexo deploy
 ```
 
 ### writing
-> hexo new [layout] title
-> vim .../title.*
-> tag: ...
-> categories: ...
-
+```
+ hexo new [layout] title  
+ vim .../title.*  
+ tag: ...  
+ categories: ...  
+```
 
   
