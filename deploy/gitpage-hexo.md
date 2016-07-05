@@ -33,7 +33,7 @@ $ npm install
 ```
 
 ### config
-> refer to [NexT](http://theme-next.iissnan.com/)
+> refer to [NexT](http://theme-next.iissnan.com/)  
 > file: <folder>/_config.yml  
 
 * theme 
