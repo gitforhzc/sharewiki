@@ -52,6 +52,9 @@ deploy:
   repo: git@github.com:gitforhzc/gitforhzc.github.io.git
   branch: master
 ```
+### theme 
+> refer to [next](http://theme-next.iissnan.com/getting-started.html)
+
 
 ### deploy
 ```
