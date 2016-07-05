@@ -33,7 +33,8 @@ $ npm install
 ```
 
 ### config 
-> file: <folder>/_config.yml
+> file: <folder>/_config.yml  
+
 * theme
 ```
 # Extensions
@@ -50,6 +51,13 @@ deploy:
   type: git
   repo: git@github.com:gitforhzc/gitforhzc.github.io.git
   branch: master
+```
+
+### deploy
+```
+cd <folder>
+hexo deploy 
+
 ```
 
   
