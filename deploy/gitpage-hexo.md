@@ -1,8 +1,8 @@
 ## access username.github.io
 > refer to [GitHubPages](https://pages.github.com/)  
 
-* create a repository named username.github.io 
-* access your GitHubPages at https://username.github.io
+1. create a repository named username.github.io 
+2. access your GitHubPages at https://username.github.io
 ```
 for example:  
 my username of GitHUb account is gitforhzc, do two things:  
@@ -13,8 +13,7 @@ my username of GitHUb account is gitforhzc, do two things:
 ## deploy heox on GitHubPages
 > refer to [Hexo](https://hexo.io/zh-cn/)  
 
-### install Hexo
-
+### install
 * requirements  
 	* [Node.js](https://nodejs.org/en/)  
 	``` 
@@ -23,7 +22,34 @@ my username of GitHUb account is gitforhzc, do two things:
 	```
 	* [Git](https://git-scm.com/)    
 		`sudo apt-get install git-core`
-* install
+* install  
 	` npm install -g hexo-cli `
+
+### initialize
+```
+$ hexo init <folder>
+$ cd <folder>
+$ npm install
+```
+
+### config 
+> file: <folder>/_config.yml
+* theme
+```
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape-plus
+```
+
+* deploy
+```
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:gitforhzc/gitforhzc.github.io.git
+  branch: master
+```
 
   
