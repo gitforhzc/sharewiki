@@ -32,10 +32,11 @@ $ cd <folder>
 $ npm install
 ```
 
-### config 
+### config
+> refer to [NexT](http://theme-next.iissnan.com/)
 > file: <folder>/_config.yml  
 
-* theme
+* theme 
 ```
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -52,9 +53,6 @@ deploy:
   repo: git@github.com:gitforhzc/gitforhzc.github.io.git
   branch: master
 ```
-### theme 
-> refer to [next](http://theme-next.iissnan.com/getting-started.html)
-
 
 ### deploy
 ```
@@ -62,5 +60,21 @@ cd <folder>
 hexo deploy 
 
 ```
+
+### theme 
+> refer to [next](http://theme-next.iissnan.com/getting-started.html)  
+
+apply new theme
+```
+hexo clean
+hexo deploy
+```
+
+### writing
+> hexo new [layout] title
+> vim .../title.*
+> tag: ...
+> categories: ...
+
 
   
