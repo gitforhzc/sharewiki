@@ -77,6 +77,34 @@ hexo deploy
  categories: ...  
 ```
 
+### mountONbranch
+```
+cd ./
+git clone git@github.com:gitforhzc/gitforhzc.github.io
+mv ./gitforhzc.github.io/.git ./
+rm -rf ./gitforhzc.github.io
+
+git branch hexo
+git checkout hexo
+git add --all
+git commit -m 'initial'
+git push origin hexo
+```
+themes
+```
+cd ./themes/next
+git clone git@github.com:gitforhzc/gitforhzc.github.io
+mv ./gitforhzc.github.io/.git ./
+rm -rf ./gitforhzc.github.io
+
+git branch theme
+git checkout theme
+git add --all
+git commit -m 'initial'
+git push origin theme
+
+```
+
 ### 参考
 [1] [GitHub Pages + Hexo搭建博客](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)  
 [2] [访客、留言板](http://www.arao.me/)
