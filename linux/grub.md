@@ -6,10 +6,9 @@
 
 ## boot loader: grub
 ### 理论
-参考： [Boot Loader: Grub2](http://linux.vbird.org/linux_basic/0510osloader.php#grub)  
+[Boot Loader: Grub2](http://linux.vbird.org/linux_basic/0510osloader.php#grub)  
 
 ### 实践
-参考： [Grub Rescue修复方法](http://forum.ubuntu.org.cn/viewtopic.php?f=139&t=348503)
 * 启动ubuntu光盘，点击`try ubuntu`  
 * 安装grub到硬盘的MBR  
 `sudo grub-install /dev/sda`
@@ -23,4 +22,6 @@ normal	# 进入grub菜单
 sudo update-grub	# 更新grub配置文件
 sudo grub-install /dev/sda	# 重新安装grub，使之读取此系统的grub.cfg
 ```
-参考：[多系统启动出现grub rescue模式，错误“normal.mod not found”解决办法](http://blog.sina.com.cn/s/blog_7deb436e0101nzkq.html)  
+参考：
+[1] [Grub Rescue修复方法](http://forum.ubuntu.org.cn/viewtopic.php?f=139&t=348503)  
+[2] [多系统启动出现grub rescue模式，错误“normal.mod not found”解决办法](http://blog.sina.com.cn/s/blog_7deb436e0101nzkq.html)  
