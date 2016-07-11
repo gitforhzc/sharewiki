@@ -1,8 +1,8 @@
 ## 问题描述
-系统：ubuntu，windows10  
-开机引导程序：grub  
-出现问题：升级windows10 16385，不料重启后没能进入升级界面，就连正常进入win10也没办法。于是启动PE修复win10开机引导，但ubuntu的grub被覆盖了  
-解决问题：修复grub，使之成为开机引导程序  
+* 系统：ubuntu，windows10  
+* 开机引导程序：grub  
+* 出现问题：升级windows10 16385，不料重启后没能进入升级界面，就连正常进入win10也没办法。于是启动PE修复win10开机引导，但ubuntu的grub被覆盖了  
+* 解决问题：修复grub，使之成为开机引导程序  
 
 ## boot loader: grub
 ### 理论
