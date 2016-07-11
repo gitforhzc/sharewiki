@@ -5,8 +5,8 @@
 * 解决问题：修复grub，使之成为开机引导程序  
 
 ## boot loader: grub
-理论： [Boot Loader: Grub2](http://linux.vbird.org/linux_basic/0510osloader.php#grub)  
-实践：  
+* 理论： [Boot Loader: Grub2](http://linux.vbird.org/linux_basic/0510osloader.php#grub)  
+* 实践：  
 1. 启动ubuntu光盘，点击`try ubuntu`  
 2. 安装grub到硬盘的MBR  
 `sudo grub-install /dev/sda`
