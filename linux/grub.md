@@ -24,10 +24,10 @@
 ```
 * grub命令行启动ubuntu系统
 ```
-set root=(hd0,9)	# 设定grub的根目录，即boot的路径
-linux /vmlinuz[tab] root=/dev/sda6	# 加载内核，挂载根目录。[tab]自动补全，root设定根目录的挂载点
-initrd /init[tab]	# 加载开机脚本程序 
-boot	# 启动
+	set root=(hd0,9)	# 设定grub的根目录，即boot的路径
+	linux /vmlinuz[tab] root=/dev/sda6	# 加载内核，挂载根目录。[tab]自动补全，root设定根目录的挂载点
+	initrd /init[tab]	# 加载开机脚本程序 
+	boot	# 启动
 ```
 	
 
