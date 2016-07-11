@@ -9,8 +9,9 @@
 * 实践：  
 	1. 启动ubuntu光盘，点击`try ubuntu`  
 	2. 安装grub到硬盘的MBR  
-	`sudo grub-install /dev/sda`
-	3. 让grub读取ubuntu的grub配置文件grub.cfg  
+	`sudo grub-install --boot-directory=</boot挂载点>   /dev/sda`
+	
+* 扩展: 修复开机只显示grub命令行模式
 	`set root=(hd0,9)`	# 我的/boot挂载在分区/dev/sda9  
 	`set prefix=(hd0,9)/grub`	# prefix 设定grub启动路径  
 	`insmod (hd0,9)/grub/i386-pc/normal.mod` # insmod 加载模块  
@@ -18,7 +19,6 @@
 	-------启动ubuntu中---------  
 	`sudo update-grub`	# 更新grub配置文件  
 	`sudo grub-install /dev/sda`	# 重新安装grub，使之读取此系统的grub.cfg  
-
 参考：  
 [1] [Grub Rescue修复方法](http://forum.ubuntu.org.cn/viewtopic.php?f=139&t=348503)  
 [2] [多系统启动出现grub rescue模式，错误“normal.mod not found”解决办法](http://blog.sina.com.cn/s/blog_7deb436e0101nzkq.html)  
