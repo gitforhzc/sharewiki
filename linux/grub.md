@@ -11,7 +11,7 @@
 	2. 安装grub到硬盘的MBR  
 	`sudo grub-install --boot-directory=</boot挂载点>   /dev/sda`
 	
-* 扩展: 修复开机只显示grub命令行模式
+* 扩展: 修复开机只显示grub命令行模式  
 	`set root=(hd0,9)`	# 我的/boot挂载在分区/dev/sda9  
 	`set prefix=(hd0,9)/grub`	# prefix 设定grub启动路径  
 	`insmod (hd0,9)/grub/i386-pc/normal.mod` # insmod 加载模块  
