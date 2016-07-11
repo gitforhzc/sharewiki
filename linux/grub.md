@@ -7,10 +7,10 @@
 ## boot loader: grub
 理论： [Boot Loader: Grub2](http://linux.vbird.org/linux_basic/0510osloader.php#grub)  
 实践：  
-* 启动ubuntu光盘，点击`try ubuntu`  
-* 安装grub到硬盘的MBR  
+1. 启动ubuntu光盘，点击`try ubuntu`  
+2. 安装grub到硬盘的MBR  
 `sudo grub-install /dev/sda`
-* 让grub读取ubuntu的grub配置文件grub.cfg  
+3. 让grub读取ubuntu的grub配置文件grub.cfg  
 `set root=(hd0,9)`	# 我的/boot挂载在分区/dev/sda9  
 `set prefix=(hd0,9)/grub`	# prefix 设定grub启动路径  
 `insmod (hd0,9)/grub/i386-pc/normal.mod` # insmod 加载模块  
