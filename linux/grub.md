@@ -13,6 +13,7 @@
 	
 ## 扩展: 
 * 修复开机只显示grub命令行模式  
+```
 	set root=(hd0,9)	# 我的/boot挂载在分区/dev/sda9  
 	set prefix=(hd0,9)/grub	# prefix 设定grub启动路径  
 	insmod (hd0,9)/grub/i386-pc/normal.mod # insmod 加载模块  
@@ -20,7 +21,15 @@
 	-------启动ubuntu中---------  
 	sudo update-grub	# 更新grub配置文件  
 	sudo grub-install /dev/sda	# 重新安装grub，使之读取此系统的grub.cfg  
+```
 * grub命令行启动ubuntu系统
+```
+set root=(hd0,9)	# 设定grub的根目录，即boot的路径
+linux /vmlinuz[tab] root=/dev/sda6	# 加载内核，挂载根目录。[tab]自动补全，root设定根目录的挂载点
+initrd /init[tab]	# 加载开机脚本程序 
+boot	# 启动
+```
+	
 
 
 
