@@ -11,9 +11,20 @@ sudo apt-get remove atom
 ```
 
 ## packages
+### general
+* sync-settings 同步atom设置
+* vim-mode
+
+### git
 * git-plus
 * git-control
 * markdown-preview
-* sync-settings
 
-[1] [Ubuntu 用户安装 Atom 0.187.0 文本编辑器](http://imcn.me/html/y2015/23471.html)
+### code
+* docblockr 方便写注释
+* esformatter 统一代码格式
+* linter 代码校验工具
+* atom-beautify 格式化代码
+
+[1] [Ubuntu 用户安装 Atom 0.187.0 文本编辑器](http://imcn.me/html/y2015/23471.html)  
+[2] [Atom使用纪要](http://www.cnblogs.com/Darren_code/p/atom.html)
