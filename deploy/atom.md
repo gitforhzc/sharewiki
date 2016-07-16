@@ -18,7 +18,6 @@ sudo apt-get remove atom
 
 ### git
 * git-plus
-* git-control
 * git-project
 
 ### code
