@@ -14,16 +14,15 @@ sudo apt-get remove atom
 ### general
 * sync-settings 同步atom设置
 * vim-mode
+* markdown-preview
 
 ### git
 * git-plus
 * git-control
 * git-project
-* markdown-preview
 
 ### code
 * docblockr 方便写注释
-* esformatter 统一代码格式
 * linter-gcc 代码校验工具
 * atom-beautify 格式化代码
 
