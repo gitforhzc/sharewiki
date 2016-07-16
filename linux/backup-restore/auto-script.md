@@ -20,15 +20,16 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH
 echo ${PATH}
 
+date=$(date +%Y-%m-%d)
 mountdir=/media/hzc/mid-storage
-workdir=${mountdir}/customed-backups/full-backup
+workdir=${mountdir}/customed-backups/full-${date}-backup
 
 umount /dev/sda5
 mkdir ${mountdir} # 创建挂载的空目录  
 mount /dev/sda5 ${mountdir} # 挂载  
 mkdir -p ${workdir}
 
-dump -0u -f ${workdir}/all.bak / 
+dump -0u -f ${workdir}/all.backup / 
 
 for target in home usr etc boot root
 do
@@ -87,14 +88,14 @@ ntfs        rw.relatime,date=ordered    0 1
 su -
 crontab -e   
 
-# file: /var/spool/cron/crontab/root
 # full backup at 00:00 every monday  
 # m h  dom mon dow   command
-  0 0  *   *    1    /root/shell-scripts/auto-full-backup.sh > /home/hzc/crond-weekly.log 2>&1
+ 20 8  *   *    6    /root/shell-scripts/auto-full-backup.sh > /home/hzc/crond-weekly.log 2>&1
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  0 0  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1 
+  30 8  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1 
+
 
 ```
 
