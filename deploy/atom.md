@@ -16,6 +16,7 @@ sudo apt-get remove atom
 * vim-mode-plus
 * markdown-preview
 * terminal plus
+
 ### git
 * git-plus
 * git-project
