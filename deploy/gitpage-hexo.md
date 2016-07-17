@@ -63,44 +63,52 @@ hexo deploy
 ### theme 
 > refer to [next](http://theme-next.iissnan.com/getting-started.html)  
 
-apply new theme
+config new theme
 ```
 hexo clean
 hexo deploy
 ```
 
 ### writing
+* post
 ```
  hexo new [layout] title  
- vim .../title.*  
+ vim ./source/_post/.../title.*  
  tag: ...  
  categories: ...  
+```
+* draft
+```
+hexo new draft title  
+vim ./source/_draft/.../title.*  
+```
+
+* publish draft to post
+```
+hexo publish title  
 ```
 
 ### mountONbranch
 ```
 cd ./
-git clone git@github.com:gitforhzc/gitforhzc.github.io
-mv ./gitforhzc.github.io/.git ./
-rm -rf ./gitforhzc.github.io
-
+git init
+git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
 git branch hexo
 git checkout hexo
-git add --all
-git commit -m 'initial'
+git add .
+git commit -m 'backup hexo source'
 git push origin hexo
 ```
 themes
 ```
 cd ./themes/next
-git clone git@github.com:gitforhzc/gitforhzc.github.io
-mv ./gitforhzc.github.io/.git ./
-rm -rf ./gitforhzc.github.io
+git init
 
+git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
 git branch theme
 git checkout theme
-git add --all
-git commit -m 'initial'
+git add .
+git commit -m 'backup theme source'
 git push origin theme
 
 ```
