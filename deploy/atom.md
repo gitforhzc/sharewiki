@@ -36,8 +36,6 @@ sudo apt-get remove atom
 `cmd-r` 在方法之间跳转  
 
 ## reference
-[Atom飞行手册翻译](https://wizardforcel.gitbooks.io/atom-flight-manual-zh-cn/content/index.html)  
-
-
+[0] [Atom飞行手册翻译](https://wizardforcel.gitbooks.io/atom-flight-manual-zh-cn/content/index.html)  
 [1] [Ubuntu 用户安装 Atom 0.187.0 文本编辑器](http://imcn.me/html/y2015/23471.html)  
 [2] [Atom使用纪要](http://www.cnblogs.com/Darren_code/p/atom.html)
