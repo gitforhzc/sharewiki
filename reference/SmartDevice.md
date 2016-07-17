@@ -22,7 +22,6 @@
 		* 小马激活绿色版
 	* Browser
 		* chrome
-			* ADSafe
 	* Download
 		* 极速版迅雷
 		* Internet Download Manager
@@ -49,10 +48,10 @@
 	* Editor
 		* markdown
 		* notepad++
+		* atom
 	* IDE
 		* dev-cpp
-		* vs2010
-		* cocos2d-x
+		* vs2015
 	* Revision Control
 		* git
 		* github
@@ -77,6 +76,7 @@
 		* hash(check package)
 		* ultraISO(writed on U disk)
 		* easyBCD(recover dual-boot)
+		* Paragon_ExtFS_for_Windows(load ext on windows)
 	* Maintenance
 		* micro PE
 		* glary Utilitie pro
@@ -99,6 +99,7 @@
 * Manager
 	* 绿色守护
 	* 岛island
+	* hermit
 	* 全能工具箱
 		* SD Maid
 		* 应用备份还原
@@ -107,16 +108,13 @@
 * Assist
 	* 全能手势
 	* SafeinCloud
-* Alarm
-	* 时钟
-	* 睡眠跟踪
+
 * App Market
 	* Google play store
 	* 酷市场
 	* 酷安装
 	* apkpure
 	* 手机乐园
-	* 虫虫助手
 * Browser
 	* shadosocks
 	* wiki
@@ -125,6 +123,7 @@
 * Daily
 	* 种子习惯
 	* offtime
+	* 24pi
 * Download
 	* AMD Pro
 	* ES文件浏览器
@@ -135,16 +134,20 @@
 	* 知米背单词
 	* 知米听力
 	* 忆术家
+	* pocket casts
 * Fit
 	* mi fit
 	* google fit
-	* Keep
+	* 7 Seven
+	* Calm
+	* StepUp
+	* 睡眠跟踪
+	* Glow
 * Infomation
 	* QQ
 	* Wechat
-	* weibo
-	* baidutieba
-	* feedme
+	* weico
+	* feedly
 	* 闲暇
 	* 知乎
 * Life
@@ -162,9 +165,7 @@
 	* Musixmatch
 	* QQ影音
 	* 超级视频
-	* VR
-		* 橙子VR
-		* 虚虚VR助手
+
 * NetSchool
 	* 网易公开课
 	* 网易云课堂
