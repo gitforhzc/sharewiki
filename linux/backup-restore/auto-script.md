@@ -1,6 +1,6 @@
 ## [自动化shell script][1]
 * 批量执行git提交命令  
-	
+
 ```
 # file: ./commit.sh
 #!/bin/bash
@@ -12,7 +12,7 @@ git push origin master
 ```
 
 * 备份所使用的命令，以待crond使用  
-	
+
 ```
 # file:~/auto-full-backup.sh
 #!/bin/bash
@@ -29,7 +29,7 @@ mkdir ${mountdir} # 创建挂载的空目录
 mount /dev/sda5 ${mountdir} # 挂载  
 mkdir -p ${workdir}
 
-dump -0u -f ${workdir}/all.backup / 
+dump -0u -f ${workdir}/all.backup /
 
 for target in home usr etc boot root
 do
@@ -58,12 +58,15 @@ mount /dev/sda5 ${mountdir} # 挂载
 mkdir -p  ${workdir}
 
 dump -1u \
-    -f ${workdir}/alldiff-${today}.backup / 
+    -f ${workdir}/alldiff-${today}.backup /
 
 for target in home usr etc root boot
 do
-    tar -N ${yesterday} -jpcv -f ${workdir}/${target}diff-${today}.tar.bz2 /${target}    
-    
+    if [ "${target}" == "home" ]; then
+      tar -N ${yesterday} -jpcv -f ${workdir}/${target}diff-${today}.tar.bz2 --exclude="VirtualBox VMs" /${target}
+    else
+      tar -N ${yesterday} -jpcv -f ${workdir}/${target}diff-${today}.tar.bz2 /${target}
+    fi
 done
 
 exit 0
@@ -74,7 +77,7 @@ exit 0
 ```
 sudo vim /etc/fstab
 
-# /dev/sda5 
+# /dev/sda5
 UUID="0004D84500007FB1" /media/hzc/mid-storage
 ntfs        rw.relatime,date=ordered    0 1
 
@@ -94,7 +97,7 @@ crontab -e
 
 # diff backup at 00:00 every day
 # m h  dom mon dow   command
-  30 8  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1 
+  30 8  *    *   *    /root/shell-scripts/auto-diff-backup.sh > /home/hzc/crond-daily.log 2>&1
 
 
 ```
@@ -108,7 +111,3 @@ crontab -e
 [2]: http://linux.vbird.org/linux_basic/0230filesystem.php#bootup
 
 [3]: http://linux.vbird.org/linux_basic/0430cron.php#whatiscron_type
-
-
-
-
