@@ -116,5 +116,6 @@ git push origin theme
 ### 参考
 [1] [GitHub Pages + Hexo搭建博客](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)  
 [2] [访客、留言板](http://www.arao.me/)
+[3] [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)
 
   
