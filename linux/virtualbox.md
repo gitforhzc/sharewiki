@@ -15,10 +15,13 @@ centos7 is running on win10-virtualbox
 `install USB driver on windows7`
 
 ## 调整VirtualBox硬盘大小
-1. 添加VBoxManage环境变量
+1. 添加VBoxManage环境变量  
 > C:\Program Files\Oracle\VirtualBox
-2. 获取当前虚拟机的uuid
+
+2. 获取当前虚拟机的uuid  
 > VBoxManage list hdds
-3. 调整虚拟硬盘大小为64G
+
+3. 调整虚拟硬盘大小为64G  
 > VBoxManage modifyhd `uuid` –-resize 65536
-4. 重新启动virtualbox
+
+4. 重新启动virtualbox  
