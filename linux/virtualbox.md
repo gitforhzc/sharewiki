@@ -1,7 +1,7 @@
 centos7 is running on win10-virtualbox
 ## 启用USB 3.0
-* install
-`Oracle_VM_VirtualBox_Extension_Pack`[link](https://www.virtualbox.org/wiki/Downloads)
+* [install]((https://www.virtualbox.org/wiki/Downloads))
+`Oracle_VM_VirtualBox_Extension_Pack`
 
 * setting
   1. on virtualbox  
@@ -14,7 +14,7 @@ centos7 is running on win10-virtualbox
 * USB driver(if windows7, then install)  
 `install USB driver on windows7`
 
-## 调整VirtualBox硬盘大小
+## [调整VirtualBox硬盘大小](http://blog.sina.com.cn/s/blog_62c89b450101lo91.html)
 1. 添加VBoxManage环境变量  
 ` C:\Program Files\Oracle\VirtualBox`
 
