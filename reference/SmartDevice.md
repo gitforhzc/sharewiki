@@ -28,10 +28,15 @@
 		* 百度云
 	* Life
 		* 12306订票助手
+		* f.lux
 	* Media Player
 		* PotPlayer
 		* 网易云音乐
 		* AutoLyric
+	* Network
+		* netspeedmonitor
+		* shadowsocks
+		* proxifier
 	* Office
 		* 福昕pdf
 		* Microsoft office 2013
@@ -43,11 +48,9 @@
 		* AirDroid
 	* Unzip
 		* WinRAR  
-  	
+
 * Devolopment
 	* Editor
-		* markdown
-		* notepad++
 		* atom
 	* IDE
 		* dev-cpp
@@ -66,9 +69,6 @@
 	* Assistant Tools
 		* LockHunter
 		* SpaceSniffer(look harddisk)
-		* netspeedmonitor
-		* shadowsocks
-		* proxifier
 		* 鲁大师
 		* easyrecovery(find file deleted)
 	* Dual system
@@ -85,15 +85,16 @@
 		* 创建还原点（每次安装嫌疑软件）
 		* 备份系统镜像（每周一次）
 	* Mobile <-> Computer
+		* 天天模拟器
 		* Wechat
 		* QQ
-		* AirDroid
+		* web.airdroid.com
 	* UWP
 		* 智能快递
 		* 优酷
 		* 必应词典
 		* 公共交通  
-		
+
 #### Android N
 	all of these backed up on Google Drive and mobile disk
 * Manager
@@ -156,7 +157,7 @@
 	* wephone
 	* 指南针
 	* 极简汇率
-* Media 
+* Media
 	* snapseed
 	* 以图搜图
 	* Mobizen
@@ -197,19 +198,19 @@
 * Wifi
 	* 极路由
 	* wifi万能钥匙
-	
+
 
 ### Linux
 	refer to linux project
 * CentOS7
-	
+
 * Ubuntu  
 	* chrome	# syn data
 	* httrack	# download website
 	* teamviewer
 * Deepin  
     refer to [deepin百科](https://wiki.deepin.org/index.php?title=%E9%A6%96%E9%A1%B5)
-    * Download 
+    * Download
         * Xtreme Dwnload Manager
 
 
@@ -220,6 +221,6 @@
 	* 屏蔽视频广告
 	* 迅雷远程下载
 		* 有效利用闲置带宽
-	* 局域网文件中转站 
+	* 局域网文件中转站
 		* 局域网NAS
 		* 配合ES文件浏览器，与电脑主机共享文件
