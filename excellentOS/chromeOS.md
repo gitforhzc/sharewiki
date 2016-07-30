@@ -18,7 +18,7 @@
 3. convert .bin to .vdi  
     copy .bin to CloudReady directory, then run :
 ```
-  "C:\Program Files\Oracle\VirtualBox/VBoxManage" convertfromraw "E:\VirtualBox VMs\CloudReady\chromiumos_image.bin" "E:\VirtualBox VMs\CloudReady\cloudready.vdi"
+  "C:\Program Files\Oracle\VirtualBox/VBoxManage" convertfromraw "E:\VirtualBox VMs\CloudReady\chromiumos_image.bin" "E:\VirtualBox VMs\CloudReady\tmpcloudready.vdi"
 ```
 
 4. virtualbox VM setting  
