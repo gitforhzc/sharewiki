@@ -62,3 +62,8 @@
 [3] [VirtualBox 网络设置](http://reverland.bitbucket.org/VirtualBox_net.html)  
 [4] [MBR格式化为GPT](http://leeforget.blog.51cto.com/6950397/1375908)
 [5] [chromiumOS download](http://arnoldthebat.co.uk/wordpress/)
+
+
+## RemixOS
+### how-to-install
+http://forum.xda-developers.com/showpost.php?p=66047894&postcount=114
