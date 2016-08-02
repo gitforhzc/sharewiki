@@ -136,3 +136,21 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 在 iOS、Android 手机和电脑的 Chrome 之间互相传递文字、链接、图片等信息。  
 * Black Menu for Google™  
 将各种Google服务集成到扩展程序上。
+
+### tools
+* User-Agent Switcher  
+随时切换浏览器的 User-Agent (UA/浏览器标识)，一键模拟各种浏览器和手机浏览器
+* IE Tab  
+在Windows系统下可以快速切换到IE浏览器内核，对付那些不支持 Chrome 的网站，譬如一些网银
+* 网页截图:注释&批注  
+捕获整个网页页面或任何部分，矩形，圆形，箭头，线条和文字，模糊敏感信息，一键上传分享注释等
+* 惠惠购物助手  
+ 多站点比价，显示历史价格
+* The QR Code Extension  
+ 快速将当前的页面网址生成一个 QR 二维码供手机扫描
+* Fawave  
+在Chrome上使用各种社交网络, 主打微博
+* IDM integration Module  
+下载百度云不限速，提取视频URL下载
+* FVD Video Downloader  
+检测网页中的音频视频文件，并下载
