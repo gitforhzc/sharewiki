@@ -20,7 +20,6 @@
 ```
   "C:\Program Files\Oracle\VirtualBox/VBoxManage" convertfromraw "E:\VirtualBox VMs\CloudReady\chromiumos_image.bin" "E:\VirtualBox VMs\CloudReady\tmpcloudready.vdi"
 ```
-
 4. virtualbox VM setting  
   > go to setting-> system:  
     enable EFI  
