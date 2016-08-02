@@ -139,7 +139,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 
 ### tools
 * User-Agent Switcher  
-随时切换浏览器的 User-Agent (UA/浏览器标识)，一键模拟各种浏览器和手机浏览器
+网页自适应测试工具，随时切换浏览器的 User-Agent (UA/浏览器标识)，一键模拟各种浏览器和手机浏览器
 * IE Tab  
 在Windows系统下可以快速切换到IE浏览器内核，对付那些不支持 Chrome 的网站，譬如一些网银
 * 网页截图:注释&批注  
@@ -152,5 +152,21 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 在Chrome上使用各种社交网络, 主打微博
 * IDM integration Module  
 下载百度云不限速，提取视频URL下载
-* FVD Video Downloader  
+* [FVD Video Downloader](http://www.chromeextensions.org/music-videos-photos/video-downloader/)  
 检测网页中的音频视频文件，并下载
+
+### english
+* OALD 7 牛津高阶第七版  
+超强大的免费在线词典
+* google 翻译  
+取词翻译，页面翻译
+* grammarly for chrome  
+语法检查
+
+### monitor
+* IP域国家国旗  
+查询当前网页网站的国家（IP地址）
+* History Trends Unlimited  
+网络访问历史趋势
+* BuiltWith Technology Profiler  
+你的网站，用了什么技术栈？
