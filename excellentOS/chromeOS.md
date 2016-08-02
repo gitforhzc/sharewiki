@@ -1,6 +1,7 @@
 ## CloudReady
-* [install](#install)
-*
+* [Install](#Install)
+* [References](#Reference)
+* [ChromeExtensions](#ChromeExtensions)
 
 ### Install
     install idCloudReady to VirtualBox   
@@ -56,14 +57,14 @@ sudo chromeos-install –-skip_src_removable -–dst /dev/sdb
     * Proxy SwitchyOmega  
       `sock5 127.0.0.1  1080`
 
-### Reference
+### References
 [1] [虚拟机中安装Chrome OS（cloudready）](http://www.gigiwangs.com/archives/1891)   
 [2] [解决鼠标在virtualbox失灵](https://equk.co.uk/2016/02/19/cloudready-virtualbox)  
 [3] [VirtualBox 网络设置](http://reverland.bitbucket.org/VirtualBox_net.html)  
 [4] [MBR格式化为GPT](http://leeforget.blog.51cto.com/6950397/1375908)  
 [5] [chromiumOS download](http://arnoldthebat.co.uk/wordpress/)
 
-### Chrome Extension
+### ChromeExtensions
 download URL: https://chrome.google.com/webstore
 + [regular](#regular)
 + [beautify](#beautify)
