@@ -1,26 +1,28 @@
-## ChromeOS
-### CloudReady
-#### install
+## CloudReady
+* [install](#install)
+*
+
+### Install
     install idCloudReady to VirtualBox   
     download: https://www.neverware.com/freedownload
 
-1. install VirtualBox  
-    download: https://www.virtualbox.org/wiki/Downloads          
+#### install VirtualBox  
+download: https://www.virtualbox.org/wiki/Downloads          
 
-2. new virtualbox VM  
-    for example:
+#### new virtualbox VM  
+for example:
   > name: CloudReady  
     type: Linux  
     version: other linux(64-bit)   
     memory: 2048MB  
     harddisk: create VDI now 32GB  
 
-3. convert .bin to .vdi  
-    copy .bin to CloudReady directory, then run :
+#### convert .bin to .vdi  
+copy .bin to CloudReady directory, then run :
 ```
   "C:\Program Files\Oracle\VirtualBox/VBoxManage" convertfromraw "E:\VirtualBox VMs\CloudReady\chromiumos_image.bin" "E:\VirtualBox VMs\CloudReady\tmpcloudready.vdi"
 ```
-4. virtualbox VM setting  
+#### virtualbox VM setting  
   > go to setting-> system:  
     enable EFI  
     change pointing device to PS/2 Mouse  
@@ -29,25 +31,24 @@
      go to setting-> storage:  
      add cloudready.vdi,and set it as port 0, while CloudReady.vdi as port 1.
 
-5. copy data from cloudready.vdi to CloudReady.vdi  
-    设置完成，启动虚拟机。进入CloudReady界面。
-
-  ```
-  Ctrl + Alt + F2 # 进入命令行模式
-  username: chronos
-  password: chrome
-  # 格式化CloudyReady.vdi，将MBR磁盘格式化为GPT
-  sudo parted /dev/sdb mklabel gpt
-  password: chrome  
-  mkpart primary 0 -1 # 划分所有空间到一个分区
-  sudo chromeos-install –-skip_src_removable -–dst /dev/sdb
-  ```
+#### copy data from cloudready.vdi to CloudReady.vdi  
+设置完成，启动虚拟机。进入CloudReady界面。
+```
+Ctrl + Alt + F2 # 进入命令行模式
+username: chronos
+password: chrome
+# 格式化CloudyReady.vdi，将MBR磁盘格式化为GPT
+sudo parted /dev/sdb mklabel gpt
+password: chrome  
+mkpart primary 0 -1 # 划分所有空间到一个分区
+sudo chromeos-install –-skip_src_removable -–dst /dev/sdb
+```
   1. When sure, type Y and press enter.
   2. When the message “Please shutdown,remove the USB device, cross your fingers, and reboot.” appears
   Press CTRL + ALT + F1 to get back to the Welcome screen.
   3. Click Shutdown, remove your USB stick(cloudready.vdi), and reboot.  
 
-6. syn google account
+#### syn google account
   1. login
   2. setting
   3. download Extension
@@ -55,20 +56,14 @@
     * Proxy SwitchyOmega  
       `sock5 127.0.0.1  1080`
 
-### reference
+### Reference
 [1] [虚拟机中安装Chrome OS（cloudready）](http://www.gigiwangs.com/archives/1891)   
 [2] [解决鼠标在virtualbox失灵](https://equk.co.uk/2016/02/19/cloudready-virtualbox)  
 [3] [VirtualBox 网络设置](http://reverland.bitbucket.org/VirtualBox_net.html)  
 [4] [MBR格式化为GPT](http://leeforget.blog.51cto.com/6950397/1375908)  
 [5] [chromiumOS download](http://arnoldthebat.co.uk/wordpress/)
 
-
-## RemixOS
-### how-to-install
-http://forum.xda-developers.com/showpost.php?p=66047894&postcount=114
-
-
-## Chrome Extension
+### Chrome Extension
 download URL: https://chrome.google.com/webstore
 + [regular](#regular)
 + [beautify](#beautify)
@@ -79,7 +74,7 @@ download URL: https://chrome.google.com/webstore
 + [monitor](#monitor)
 
 
-### regular
+#### regular
 * Proxy SwitchyOmega  
 浏览器代理神器：可以轻松快捷地管理多个代理，并能快速地在代理之间切换。可以设置规则或使用 PAC 自动智能对指定的网站使用代理  
 * Shadowsocks
@@ -91,7 +86,7 @@ download URL: https://chrome.google.com/webstore
 * Context  
 它不仅可以禁用/启用全部扩展，还可以让你对扩展进行分组，并且可以快速启用/禁用某个分组的扩展
 
-### beautify
+#### beautify
 * Ink for Google  
 改善 Google 服務的版面設計,
 加入更多 Material Design 設計元素
@@ -110,7 +105,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * Adblock Plus  
 屏蔽广告
 
-### efficiency
+#### efficiency
 * Vimium  
 键盘流必备神器, 用 VIM 的操作方式来操作 Chrome
 * crxMouse Chrome Gestures  
@@ -126,7 +121,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * 删除谷歌重定向  
 避免谷歌搜索结果链接重定向, 同时防止点击追踪
 
-### syn
+#### syn
 * Save to Pocket  
 随时保存正在浏览的文章到Pocket，待有时间后再仔细阅读，设置好标签后可以归类浏览；
 * LastPass  
@@ -136,7 +131,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * Black Menu for Google™  
 将各种Google服务集成到扩展程序上。
 
-### tools
+#### tools
 * User-Agent Switcher  
 网页自适应测试工具，随时切换浏览器的 User-Agent (UA/浏览器标识)，一键模拟各种浏览器和手机浏览器
 * IE Tab  
@@ -154,7 +149,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * [FVD Video Downloader](http://www.chromeextensions.org/music-videos-photos/video-downloader/)  
 检测网页中的音频视频文件，并下载
 
-### english
+#### english
 * OALD 7 牛津高阶第七版  
 超强大的免费在线词典
 * google 翻译  
@@ -162,10 +157,15 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * grammarly for chrome  
 语法检查
 
-### monitor
+#### monitor
 * IP域国家国旗  
 查询当前网页网站的国家（IP地址）
 * History Trends Unlimited  
 网络访问历史趋势
 * BuiltWith Technology Profiler  
 你的网站，用了什么技术栈？
+
+
+## RemixOS
+### how-to-install
+http://forum.xda-developers.com/showpost.php?p=66047894&postcount=114
