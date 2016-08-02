@@ -1,7 +1,20 @@
 ## CloudReady
 * [Install](#Install)
+  * [install VirtualBox](#install VirtualBox)
+  * [new virtualbox VM](#new virtualbox VM)
+  * [convert .bin to .vdi](#convert .bin to .vdi)
+  * [virtualbox VM setting](#virtualbox VM setting)
+  * [copy data from cloudready.vdi to CloudReady.vdi](#copy data from cloudready.vdi to CloudReady.vdi)
+  * [syn google account](#syn google account)
 * [References](#Reference)
 * [ChromeExtensions](#ChromeExtensions)
+  + [regular](#regular)
+  + [beautify](#beautify)
+  + [efficiency](#efficiency)
+  + [syn](#syn)
+  + [tools](#tools)
+  + [english](#english)
+  + [monitor](#monitor)
 
 ### Install
     install idCloudReady to VirtualBox   
@@ -66,14 +79,6 @@ sudo chromeos-install –-skip_src_removable -–dst /dev/sdb
 
 ### ChromeExtensions
 download URL: https://chrome.google.com/webstore
-+ [regular](#regular)
-+ [beautify](#beautify)
-+ [efficiency](#efficiency)
-+ [syn](#syn)
-+ [tools](#tools)
-+ [english](#english)
-+ [monitor](#monitor)
-
 
 #### regular
 * Proxy SwitchyOmega  
