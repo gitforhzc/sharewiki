@@ -28,8 +28,8 @@
 * wiki
 * chrome
 * flynx
-* Z免流浏览器
-* X浏览器
+* via浏览器
+* hermit
 
 ### Daily
 * 种子习惯
