@@ -17,16 +17,24 @@
 * 极速版迅雷
 * 百度云
 
+#### FileManage
+* SpaceSniffer  
+* Clover  
+* Listary  
+
 #### Life
 * 12306订票助手
 * f.lux
+* Time management software  
 
 #### Media Player
 * PotPlayer
 * 网易云音乐
 * AutoLyric
+* advanced codecs
 
 #### Network
+* WiFiPasswordRevealer  
 * netspeedmonitor
 * [shadowsocks][N1]
 * proxifier
