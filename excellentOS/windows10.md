@@ -68,6 +68,7 @@
 * github
 
 #### Virtual Machine
+* gow(gnu on windows)
 * VirtualBox
 * [cygwin-86-64][V1]
 [V1]: (https://github.com/gitforhzc/sharewiki/blob/master/deploy/cygwin.md)
