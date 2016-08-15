@@ -2,12 +2,13 @@
 > refer to [GitHubPages](https://pages.github.com/)  
 
 1. create a repository named username.github.io
-2. access your GitHubPages at https://username.github.io
+2. access your GitHubPages to https://username.github.io
 ```
 for example:  
-my username of GitHUb account is gitforhzc, do two things:  
+my username of GitHub account is gitforhzc, now do two things:  
     1. new repository named gitforhzc.github.io
-    2. open browser and access https://gitforhzc.github.io
+    2. create index.html which is to show home page
+    3. open browser and access https://gitforhzc.github.io
 ```
 
 ## deploy heox on GitHubPages
@@ -32,41 +33,35 @@ $ cd <folder>
 $ npm install
 ```
 
-### config
-> refer to [NexT](http://theme-next.iissnan.com/getting-started.html)  
-
-* theme
+### deploy git
+**requirements: add ssh key to github**
+* install hexo-deployer-git  
+`npm install hexo-deployer-git --save`
+* open ./\_config.yml  
 ```
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-```
-
-* deploy
-```
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:gitforhzc/gitforhzc.github.io.git
   branch: master
 ```
-
-### deploy
-```
-cd <folder>
-hexo deploy
-
-```
+* deploy  
+`hexo deploy`
 
 ### theme
-> refer to [next](http://theme-next.iissnan.com/getting-started.html)  
+> refer to [NexT](http://theme-next.iissnan.com/getting-started.html)  
 
-config new theme
+* download theme NexT  
+`git clone git@github.com:iissnan/hexo-theme-next.git ./themes/next`
+* activate theme  
+```
+# file: ./_config.yml
+theme: next
+```
+
+* deploy new theme
 ```
 hexo clean
-hexo deploy
+hexo generate --deploy
 ```
 
 ### writing
@@ -88,25 +83,23 @@ vim ./source/_draft/.../title.*
 hexo publish title  
 ```
 
-### mountONbranch
+### backupONbranch
+#### hexo source code
 ```
 cd ./
 git init
 git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
-git branch hexo
-git checkout hexo
+git checkout -b hexo
 git add .
 git commit -m 'backup hexo source'
 git push origin hexo
 ```
-themes
+#### themes
 ```
 cd ./themes/next
 git init
-
 git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
-git branch theme
-git checkout theme
+git checkout -b theme
 git add .
 git commit -m 'backup theme source'
 git push origin theme
@@ -114,7 +107,5 @@ git push origin theme
 ```
 
 ### 参考
-[1] [GitHub Pages + Hexo搭建博客](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)  
+[1] [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)  
 [2] [访客、留言板](http://www.arao.me/)  
-[3] [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)  
-[4] [Hexo系列教程](https://www.mashiro.io/archives/)
