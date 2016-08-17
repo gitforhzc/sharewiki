@@ -122,4 +122,5 @@ git push origin theme
 ### 参考
 [1] [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)  
 [2] [SEO、访客、留言板](http://www.arao.me/)  
-[3] [Google搜索引擎提交网站入口](https://www.google.com/webmasters/tools/home?hl=zh-CN)
+[3] [Google搜索引擎提交网站入口](https://www.google.com/webmasters/tools/home?hl=zh-CN)  
+[4] [Hexo 自动部署到 Github](http://www.jianshu.com/p/e22c13d85659)
