@@ -1,7 +1,9 @@
 ## use an ssh to login remote server
-> server:sudo apt-get install openssh-server    
-> client:juiceSSH  
-
+### server
+`sudo apt-get install openssh-server `  
+### client
+**download juiceSSH apk**  
+`ssh username@ipadress`
 
 
 ## use an SSH key to login github without password

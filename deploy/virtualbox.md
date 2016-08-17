@@ -40,4 +40,6 @@ centos7 is running on win10-virtualbox
 
 ### 参考
 [1] 为virtualbox配置端口映射: http://www.jianshu.com/p/573cf2ea4da9  
-[2] VirtualBox设置NAT端口映射: http://forum.ubuntu.org.cn/viewtopic.php?f=65&t=382161
+[2] VirtualBox设置NAT端口映射: http://forum.ubuntu.org.cn/viewtopic.php?f=65&t=382161  
+[3] 安装和使用Linux花生壳服务: http://service.oray.com/question/116.html  
+[4] VirtualBox中的四种网络连接方式: http://www.jianshu.com/p/f59a0695b164

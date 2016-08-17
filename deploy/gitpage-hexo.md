@@ -26,12 +26,43 @@ my username of GitHub account is gitforhzc, now do two things:
 * install  
 	` npm install -g hexo-cli `
 
-### initialize
+### init
 ```
 $ hexo init <folder>
 $ cd <folder>
 $ npm install
 ```
+### writing
+* post
+```
+ hexo new [layout] title  
+ vim ./source/_post/.../title.*  
+ tag: ...  
+ categories: ...  
+```
+* draft
+```
+hexo new draft title  
+vim ./source/_draft/.../title.*  
+```
+
+* publish draft to post
+```
+hexo publish title  
+```
+
+
+### generate
+cd 到你的init目录，执行如下命令，生成静态页面至./public/目录  
+`hexo generate`
+### debug
+执行如下命令，启动本地服务，进行文章预览调试。  
+`hexo server`  
+浏览器输入http://localhost:4000就可以看到效果
+
+
+
+
 
 ### deploy git
 **requirements: add ssh key to github**
@@ -64,24 +95,6 @@ hexo clean
 hexo generate --deploy
 ```
 
-### writing
-* post
-```
- hexo new [layout] title  
- vim ./source/_post/.../title.*  
- tag: ...  
- categories: ...  
-```
-* draft
-```
-hexo new draft title  
-vim ./source/_draft/.../title.*  
-```
-
-* publish draft to post
-```
-hexo publish title  
-```
 
 ### backupONbranch
 #### hexo source code
@@ -108,4 +121,5 @@ git push origin theme
 
 ### 参考
 [1] [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)  
-[2] [访客、留言板](http://www.arao.me/)  
+[2] [SEO、访客、留言板](http://www.arao.me/)  
+[3] [Google搜索引擎提交网站入口](https://www.google.com/webmasters/tools/home?hl=zh-CN)
