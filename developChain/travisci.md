@@ -1,6 +1,6 @@
 # Continuous Integration
 入门文章  
-[让博客Docker化，轻松上手Docker](http://dockone.io/article/961)
+[让博客Docker化，轻松上手Docker](http://dockone.io/article/961)  
 [从0到1：搭建基于Travis CI和GitHub的自动化测试工作流](http://dockone.io/article/962)
 
 
@@ -9,5 +9,5 @@
 
 ## TravisCi
 [office site](https://docs.travis-ci.com/)  
-[成功部署的案例](http://www.jianshu.com/p/e22c13d85659)
+[成功部署的案例](http://www.jianshu.com/p/e22c13d85659)  
 [Hexo 自动部署到 Github](http://lotabout.me/2016/Hexo-Auto-Deploy-to-Github/)
