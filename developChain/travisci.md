@@ -8,6 +8,5 @@
 [office site](https://docs.docker.com/engine/understanding-docker/)
 
 ## TravisCi
-[office site](https://docs.travis-ci.com/)  
-[成功部署的案例](http://www.jianshu.com/p/e22c13d85659)  
+[office site](https://docs.travis-ci.com/)    
 [Hexo 自动部署到 Github](http://lotabout.me/2016/Hexo-Auto-Deploy-to-Github/)
