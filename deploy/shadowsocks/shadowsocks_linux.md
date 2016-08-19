@@ -1,5 +1,5 @@
-## linux配置shadowsocks客户端
-### 目录
+# linux配置shadowsocks客户端
+## 目录
 * [平台](#平台)
 * [安装shadowsocks](#安装shadowsocks)
 * [shadowsocks配置文件](#shadowsocks配置文件)
@@ -8,15 +8,19 @@
 * [配置终端全局代理](#配置终端全局代理)
 * [参考](#参考)  
 
-### 正文
-- 平台： centOS7 / Ubuntu / deepin
-- 安装shadowsocks  
-  `yum install python-setuptools`  
-  `easy_install pip`    
-  `pip install shadowsocks`  
-
-- shadowsocks配置文件/usr/local/etc/ssconfig.json
+## 正文
+### 平台： centOS7 / Ubuntu / deepin
+### 安装shadowsocks  
+```/sbin/bash
+sudo yum install python-setuptools
+sudo easy_install pip
+sudo pip install shadowsocks
 ```
+### shadowsocks配置文件
+```
+sudo touch /usr/local/etc/ssconfig.json
+sudo vim /usr/local/etc/ssconfig.json
+添加以下内容:
 {
         "server":"remote-shadowsocks-server-ip-addr",
         "server_port":remote-port,
@@ -29,7 +33,6 @@
         "workers":1
 }
 ```
-
 >//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]  
 //server_port   服务端端口，一般为443  
 //local_address 本地监听地址，缺省为127.0.0.1  
@@ -40,22 +43,106 @@
 //fast_open 是否启用TCP-Fast-Open  
 //wokers        worker数量，如果不理解含义不要改   
 
-- 连接shadowsocks服务器  
-   `sslocal -c /usr/local/etc/ssconfig.json`  
+### 连接shadowsocks服务器  
+   `sslocal -c /usr/local/etc/ssconfig.json -d start`  
    或手动制定参数运行：  
    `sslocal -s 服务器地址 -p 服务器端口 -l 本地端端口 -k 密码 -m 加密方法`  
-   实现自启并且使之后台运行，关闭终端也不影响：  
-    * gnome  
-    yum install gnome-tweak-tool   
-    gnome-session-properties    
-    click 'Add', command: sslocal -c /usr/local/etc/ssconfig.json      
-    * 开机自启脚本  
+   `-d start`使之后台运行，关闭终端也不影响      
+### 开机自启shadowsocks  
     vim /etc/rc.local  
     sslocal -c /usr/local/etc/ssconfig.json  #append
 
 也有图形化的客户端shadowsocks-gui@gitHub、shadowsocks-qt5等，可到源中下载安装。
 
-- 配置浏览器(firefox)  
+### 配置终端全局代理   
+参见[CentOS命令行下使用代理：Shadowsocks+privoxy+redsocks实现全局代理](https://laowang.me/centos-global-privoxy.html)  
+#### ubuntu为例
+0. 获取权限
+```
+su -
+```
+1. 安装  
+```
+apt-get install privoxy
+```
+2. 配置  
+```
+vim /etc/privoxy/config
+# 查找修改以下两行
+listen-address 127.0.0.1:8118
+forward-socks5t / 127.0.0.1:1080 .
+```
+3. 代理
+```
+vim ~/.profile
+export http_proxy=http://127.0.0.1:8118
+export ftp_proxy=http://127.0.0.1:8118
+```
+4. 开机自启服务
+```
+vim /etc/rc.local
+service privoxy start
+```
+5. 重启
+```
+sudo reboot
+```
+
+#### CentOS7为例
+0. 获取权限
+```
+su -
+```
+1. 安装  
+  * 下载privoxy最新版  
+  http://sourceforge.net/projects/ijbswa/files/Sources/
+  * 编译
+  ```
+  tar xzvf privoxy-3.0.23-stable-src.tar.gz
+  cd privoxy-3.0.23-stable
+  autoheader
+  autoconf
+  ./configure      # (--help to see options)
+  make             # (the make from GNU, sometimes called gmake)
+  ```
+  * 建立账户  
+  ```
+  useradd privoxy -r -s /usr/sbin/nologin
+  ```
+  * 安装
+  ```
+  make install
+  ```
+
+2. 配置  
+```
+vim  /usr/local/etc/privoxy/config
+添加
+forward-socks5 / 127.0.0.1:1080 .
+forward 10.*.*.*/ .
+forward 192.168.*.*/ .
+forward 127.*.*.*/ .
+forward localhost/ .
+```
+3. 代理
+```
+vim ~/.profile
+export http_proxy=http://127.0.0.1:8118
+export ftp_proxy=http://127.0.0.1:8118
+```
+4. 开启服务  
+`systemctl start privoxy`
+5. 开机自启服务
+```
+vim /etc/rc.local
+systemctl start privoxy
+```
+6. 重启
+```
+sudo reboot
+```
+
+### 配置浏览器(firefox)  
   1. 安装扩展autoproxy
   2. 配置proxy server  
   `name: shadowsocks`
@@ -64,32 +151,7 @@
   `勾选sock5`
   3. 启用浏览器全局代理，默认代理为shadowsocks  
 
-- 配置终端全局代理   
-参见[CentOS命令行下使用代理：Shadowsocks+privoxy+redsocks实现全局代理](https://laowang.me/centos-global-privoxy.html)
-``` 
-1. 安装
-su -
-apt-get install privoxy
-2. 配置
-vim /etc/privoxy/config
-761G	# 找到 761行
-listen-address 127.0.0.1:8118
-# 去掉前面的注释符号，后面的8118端口可以随便改，但不要和别的服务冲突
-1314G	# 再找到 1314
-forward-socks5t / 127.0.0.1:1080 .
-# 去掉前面的注释符号，后面的1080端口要对应Shadowsocks服务里面的配置，要一致
-exit	# 退出root用户
-3. 代理
-vim ~/.profile
-# 添加以下几行
-export http_proxy=http://127.0.0.1:8118
-export ftp_proxy=http://127.0.0.1:8118
-4. 开机自启服务
-vim /etc/rc.local
-sslocal -c /usr/local/etc/ssconfig.json
-service privoxy start
-5. 重启
-```
+
 
 - 参考  
 [1][linux配置shadowsocks客户端](http://my.oschina.net/u/1432769/blog/619651)  
