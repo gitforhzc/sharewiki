@@ -80,7 +80,8 @@ export ftp_proxy=http://127.0.0.1:8118
 ```
 4. 开机自启服务
 ```
-vim /etc/rc.local
+chmod a+x /etc/rc.d/rc.local
+vim /etc/rc.d/rc.local
 service privoxy start
 ```
 5. 重启
@@ -134,8 +135,9 @@ export ftp_proxy=http://127.0.0.1:8118
 `systemctl start privoxy`
 5. 开机自启服务
 ```
-vim /etc/rc.local
-systemctl start privoxy
+chmod a+x /etc/rc.d/rc.local
+vim /etc/rc.d/rc.local
+service privoxy start
 ```
 6. 重启
 ```
