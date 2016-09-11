@@ -80,13 +80,11 @@ sudo chromeos-install –-skip_src_removable -–dst /dev/sdb
 ### ChromeExtensions
 download URL: https://chrome.google.com/webstore
 
-#### regular
+#### 常规regular
 * Proxy SwitchyOmega  
 浏览器代理神器：可以轻松快捷地管理多个代理，并能快速地在代理之间切换。可以设置规则或使用 PAC 自动智能对指定的网站使用代理  
 * Shadowsocks
  sock5代理，配合proxifier实现全局代理
-* Chrono下载管理器
-让你轻松高效地管理Chrome浏览器中的下载任务
 * Better Extension Manager  
 小巧好用的 Chrome 扩展/应用批量管理扩展
 * Context  
@@ -104,28 +102,30 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 平滑滚动页面
 * AutoPagerize  
 自动翻页,浏览网页时，可以自动翻页并将每一页的内容接在现有内容的末尾
-* Force Microsoft Yahei Font  
-强制让 Chrome 使用微软雅黑显示网页。
-* 关灯看视频  
-观看视频时自动调暗页面，让您仿佛置身于电影院中
+* 替换字体的中文部分为雅黑  
+让 Chrome 使用微软雅黑显示网页。
 * Adblock Plus  
 屏蔽广告
 
 #### efficiency
 * Vimium  
 键盘流必备神器, 用 VIM 的操作方式来操作 Chrome
-* crxMouse Chrome Gestures  
-鼠标手势、超级拖拽、平滑滚动、标签列表等功能
 * OneTab  
 将当前打开的所有标签页保存到一个页面（列表）以备稍后或下次再访问
 * Lazarus: Form Recovery  
 输入的内容自动保存，防止浏览器意外关闭导致的内容丢失
-* Octotree  
-用来显示 Github 项目的目录结构，它允许你直接从浏览器中浏览项目
 * Auto HD For YouTube™  
 在播放 Youtube 的视频时，使用提前预定好的清晰度
 * 删除谷歌重定向  
 避免谷歌搜索结果链接重定向, 同时防止点击追踪
+* 新浪微博一键打开
+
+#### Github
+* Octotree  
+用来显示 Github 项目的目录结构，它允许你直接从浏览器中浏览项目
+* GitHub Awesome Autocomplete
+搜索显示热门的项目
+* ZenHub for GitHub
 
 #### syn
 * Save to Pocket  
@@ -148,8 +148,6 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
  多站点比价，显示历史价格
 * The QR Code Extension  
  快速将当前的页面网址生成一个 QR 二维码供手机扫描
-* Fawave  
-在Chrome上使用各种社交网络, 主打微博
 * IDM integration Module  
 下载百度云不限速，提取视频URL下载
 * [FVD Video Downloader](http://www.chromeextensions.org/music-videos-photos/video-downloader/)  
@@ -163,7 +161,7 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 * grammarly for chrome  
 语法检查
 
-#### monitor
+#### 监控monitor
 * IP域国家国旗  
 查询当前网页网站的国家（IP地址）
 * History Trends Unlimited  
