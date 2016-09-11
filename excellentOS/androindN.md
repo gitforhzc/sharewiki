@@ -118,6 +118,11 @@
 * 超级视频
 * 票贩儿@电影
 
+### MianLiu
+* openvpn
+* hap
+* tiny
+
 ### NetSchool
 * 网易公开课
 * 网易云课堂
@@ -182,7 +187,6 @@
 * BetterBatteryStatus
 * 系统探测器
 * XDA
-
 
 ### Wifi
 * 极路由
