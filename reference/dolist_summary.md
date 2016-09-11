@@ -11,7 +11,7 @@
 	> * [鸟哥私房菜-Shell Script](http://linux.vbird.org/linux_basic/0340bashshell-scripts.php)  
 	> * [高级Bash脚本编程指南--中文版](https://www.gitbook.com/book/imcmy/advanced-bash-scripting-guide-in-chinese/details)
 
-## Revision Control 
+## Revision Control
 * Git
 	> * [progit-zh-v2.1.1](https://www.gitbook.com/book/bingohuang/progit2/details)
 	> * [git](http://www.worldhello.net/gotgit/)  
@@ -19,7 +19,7 @@
 * Github
 	> * [gotgithub](http://www.worldhello.net/gotgithub/)  
 
-* Extension: 
+* Extension:
 	> * [GitBook](https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html)
 	> * GitPage
 
@@ -44,3 +44,8 @@ Run program: edit->build->compile->debug
 ### 4. debug
 * gdb
 	> * [用GDB调试程序](http://wiki.ubuntu.org.cn/%E7%94%A8GDB%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F)
+
+## Major
+### C++
+
+### data structure
