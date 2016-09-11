@@ -13,8 +13,8 @@
 
 ### Accessories
 * 全能手势
-* SafeinCloud
 * Easy Voice Recorder
+* BlipBlip
 
 ### App Market
 * Google play store
@@ -22,6 +22,7 @@
 * 酷安装
 * apkpure
 * 手机乐园
+* 最美应用
 
 ### Browser
 * shadowsocks
@@ -31,10 +32,18 @@
 * via浏览器
 * hermit
 
+### Chinese
+* 成语词典
+* 古诗词典
+* 粤语
+
 ### Daily
 * 种子习惯
 * offtime
 * 24pi
+* Type machine
+* 生活轨迹
+* Fabulous
 
 ### Download
 * AMD Pro
@@ -58,6 +67,16 @@
 * 睡眠跟踪
 * Glow
 
+### Google
+* Arts & Culture
+* Duo
+* Google Trips
+
+### Git
+* GitSkarios
+* Top GitHub
+* linux command library
+
 ### Infomation
 * QQ
 * Wechat
@@ -65,7 +84,11 @@
 * feedly
 * 闲暇
 * 知乎
+* 读读日报
 * reddit
+* Pinterest
+* Segmentfault
+* zSMTH
 
 ### Life
 * google weather
@@ -76,6 +99,7 @@
 
 ### Media
 * snapseed
+* PPIICC
 * 以图搜图
 * Mobizen
 * spotify
@@ -104,6 +128,12 @@
 * ES文件浏览器	# samba,hiwifi
 * TeamViewer
 * AirDroid
+* Pushbulet
+* SuperBeam
+
+### Safe
+* LastPass
+* Authenticator
 
 ### Transportation
 * 百度地图
@@ -117,7 +147,6 @@
 * 欧路词典
 
 ### Text
-* type machine
 * universal copy
 * 验证码助手
 
