@@ -20,12 +20,13 @@
 #### FileManage
 * SpaceSniffer  
 * Clover  
-* Listary  
+* listary  
 
 #### Life
 * 12306订票助手
 * f.lux
-* Time management software  
+* ManicTime  
+
 
 #### Media Player
 * PotPlayer
@@ -39,6 +40,7 @@
 * [shadowsocks][N1]
 * proxifier
 [N1]: (https://github.com/gitforhzc/sharewiki/tree/master/shadowsocks)
+* 花生壳
 
 #### Office
 * 福昕pdf
@@ -105,9 +107,14 @@
 * 天天模拟器
 * web.airdroid.com
 * QQ
+* Google Drive
 
 #### UWP
 * 智能快递
 * 优酷
 * 必应词典
 * 公共交通  
+
+#### office
+* ABBYY PDF Transformer+
+* ABBYY FineReader 12 Professional
