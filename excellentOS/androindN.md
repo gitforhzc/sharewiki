@@ -33,6 +33,7 @@
 * hermit
 
 ### Chinese
+* 快快查汉语词典
 * 成语词典
 * 古诗词典
 * 粤语
@@ -71,6 +72,7 @@
 * Arts & Culture
 * Duo
 * Google Trips
+* Analytics
 
 ### Git
 * GitSkarios
@@ -90,6 +92,13 @@
 * Segmentfault
 * zSMTH
 
+### Jobs
+* 智联招聘
+* 前程无忧
+* 大街网
+* 看准网
+* 乔布简历
+
 ### Life
 * google weather
 * 来电信息
@@ -97,17 +106,17 @@
 * 指南针
 * 极简汇率
 
-### Media
-* snapseed
-* PPIICC
-* 以图搜图
-* Mobizen
+### Music
 * spotify
 * Musixmatch
 * 网易云音乐
 * 轻听
+
+### Movie
+* Mobizen
 * QQ影音
 * 超级视频
+* 票贩儿@电影
 
 ### NetSchool
 * 网易公开课
@@ -117,6 +126,11 @@
 * Journey
 * JotterPad
 * Keep
+
+### Picture
+* snapseed
+* PPIICC
+* 以图搜图
 
 ### Reading
 * 静读天下
@@ -149,6 +163,26 @@
 ### Text
 * universal copy
 * 验证码助手
+
+### Xposed
+* Xposed安装器
+* Xposed商店
+* Xposed植入设置界面
+* BusyBox Pro:Linux工具箱
+* TWRP Manager
+* MaxLock
+* PerfectColorBar
+* 安卓N新特性模块
+* 重力工具箱
+* unicon图标随便换
+* 隐藏锁屏通知
+* 阻止创建快捷方式
+* 阻止运行
+* 禁止唤醒
+* BetterBatteryStatus
+* 系统探测器
+* XDA
+
 
 ### Wifi
 * 极路由
