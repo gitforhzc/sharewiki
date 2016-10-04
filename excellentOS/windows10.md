@@ -118,3 +118,8 @@
 #### office
 * ABBYY PDF Transformer+
 * ABBYY FineReader 12 Professional
+
+## install windowsXP instead of Windows7
+1. 在bios将硬盘模式改为IDE,windowsXP不支持默认的硬盘模式
+2. 启动微pe,利用windows安装器加载系统映像
+3. 开始安装
