@@ -120,6 +120,8 @@
 * ABBYY FineReader 12 Professional
 
 ## install windowsXP instead of Windows7
-1. 在bios将硬盘模式改为IDE,windowsXP不支持默认的硬盘模式
+1. 在bios将硬盘模式改为IDE,windowsXP不支持默认的硬盘模式[AHCI][1]
 2. 启动微pe,利用windows安装器加载系统映像
 3. 开始安装
+
+[1]: http://ask.zol.com.cn/q/24326.html
