@@ -30,7 +30,6 @@ sudo vim /usr/local/etc/ssconfig.json
         "timeout":300,
         "method":"aes-256-cfb",
         "fast_open":false,
-        "workers":1
 }
 ```
 >//server        服务端监听地址(IPv4或IPv6)，若需同时指定多个服务端ip，可设置"server":["1.1.1.1","2.2.2.2"]  
@@ -40,8 +39,7 @@ sudo vim /usr/local/etc/ssconfig.json
 //password  用以加密的密匙  
 //timeout       超时时间（秒）  
 //method          加密方法，默认的table是一种不安全的加密，此处首推aes-256-cfb  
-//fast_open 是否启用TCP-Fast-Open  
-//wokers        worker数量，如果不理解含义不要改   
+//fast_open 是否启用TCP-Fast-Open   
 
 ### 连接shadowsocks服务器  
    `sslocal -c /usr/local/etc/ssconfig.json -d start`  
