@@ -7,3 +7,8 @@
 `有效利用闲置带宽`
 	* 局域网文件中转站
 `局域网NAS,配合ES文件浏览器，与电脑主机共享文件`
+
+## newifi
+
+### Padavan固件
+http://www.right.com.cn/forum/thread-161324-1-1.html
