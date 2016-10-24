@@ -10,15 +10,15 @@
 
 ## getSource
 ```
-git clone https://github.com/gitforhzc/gitforhzc.github.io.git`
+git clone https://github.com/gitforhzc/gitforhzc.github.io.git
 git clone https://github.com/gitforhzc/gitforhzc.github.io.git --branch theme ./themes/next/
 ```
 
 ## install hexo dependencies
-npm install -g hexo-cli
-npm install
+npm install -g hexo-cli  
+npm install  
 
 ## run hexo 
-hexo clean
-hexo generate
-nohup hexo server &
+hexo clean  
+hexo generate  
+nohup hexo server &  
