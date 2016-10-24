@@ -9,10 +9,16 @@
 `yum install git-core`
 
 ## getSource
-`git clone https://github.com/gitforhzc/gitforhzc.github.io.git`
+```
+git clone https://github.com/gitforhzc/gitforhzc.github.io.git`
+git clone https://github.com/gitforhzc/gitforhzc.github.io.git --branch theme ./themes/next/
+```
 
-## restore
-` ./restore.sh`
+## install hexo dependencies
+npm install -g hexo-cli
+npm install
 
-## backup
-` ./backup.sh`
+## run hexo 
+hexo clean
+hexo generate
+nohup hexo server &
