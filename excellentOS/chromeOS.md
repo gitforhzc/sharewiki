@@ -89,6 +89,10 @@ download URL: https://chrome.google.com/webstore
 小巧好用的 Chrome 扩展/应用批量管理扩展
 * Context  
 它不仅可以禁用/启用全部扩展，还可以让你对扩展进行分组，并且可以快速启用/禁用某个分组的扩展
+* Violent Monkey  
+脚本管理工具
+  * 百度云直接下载
+  * 阻止百度网盘跳转HTTPS
 
 #### beautify
 * Ink for Google  
@@ -168,7 +172,8 @@ Stylish 是一款用户样式管理器，可让您调整网页的样式。它可
 网络访问历史趋势
 * BuiltWith Technology Profiler  
 你的网站，用了什么技术栈？
-
+* distill Web monitor
+网站监控，有更新变化会发出通知
 
 ## RemixOS
 ### how-to-install
