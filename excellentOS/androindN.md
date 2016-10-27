@@ -3,7 +3,7 @@
 ### Manager
 * 绿色守护
 * 岛island
-* iBattery
+* iBattery / 智能网络xposed
 * 全能工具箱(replace following)
 	* SD Maid
 	* 应用备份还原
@@ -82,6 +82,7 @@
 ### Infomation
 * QQ
 * Wechat
+* 微痕迹
 * weibo
 * feedly
 * 闲暇
@@ -131,6 +132,7 @@
 * Journey
 * JotterPad
 * Keep
+* 滴答清单
 
 ### Picture
 * snapseed
@@ -141,6 +143,7 @@
 * 静读天下
 * 多看阅读
 * Pocket
+* WPS Office
 
 ### Remote
 * juiceSSH # ssh
