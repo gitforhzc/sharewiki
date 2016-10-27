@@ -19,7 +19,7 @@
 
 #### FileManage
 * SpaceSniffer  
-* Clover  
+* QTTabBar  
 * listary  
 
 #### Life
@@ -60,6 +60,7 @@
 ### Devolopment
 #### Editor
 * atom
+* editPlus
 
 #### IDE
 * dev-cpp
