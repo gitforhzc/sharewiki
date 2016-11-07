@@ -30,3 +30,6 @@ $echo “resource/css” >> .git/info/sparse-checkout
 $git pull origin master
 ```
 具体可参考Git的Sparse checkout文档: http://schacon.github.io/git/git-read-tree.html#_sparse_checkout
+
+## git submodule
+http://www.kafeitu.me/git/2012/03/27/git-submodule.html
