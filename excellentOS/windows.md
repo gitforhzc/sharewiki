@@ -14,19 +14,18 @@
 
 #### Download  
 * Internet Download Manager
-* 极速版迅雷
-* 百度云
+* 迷你迅雷
+* 百度干净云
 
 #### FileManage
 * SpaceSniffer  
 * QTTabBar  
-* listary  
+* Everything  
 
 #### Life
 * 12306订票助手
 * f.lux
 * ManicTime  
-
 
 #### Media Player
 * PotPlayer
@@ -69,6 +68,7 @@
 #### Revision Control
 * git
 * github
+* Tortoise git
 
 #### Virtual Machine
 * gow(gnu on windows)
@@ -98,7 +98,7 @@
 
 #### Maintenance
 * micro PE
-* glary Utilitie pro
+* Wise Care 365
 * malware-kill(吊销证书以阻止安装)
 * 备份文件历史纪录（每天一次）
 * 创建还原点（每次安装嫌疑软件）
@@ -110,15 +110,18 @@
 * QQ
 * Google Drive
 
+#### pdf
+* ABBYY PDF Transformer+
+* ABBYY FineReader 12 Professional
+* Adobe Acrobat
+
 #### UWP
 * 智能快递
 * 优酷
 * 必应词典
 * 公共交通  
 
-#### office
-* ABBYY PDF Transformer+
-* ABBYY FineReader 12 Professional
+
 
 ## install windowsXP instead of Windows7
 1. 在bios将硬盘模式改为IDE,windowsXP不支持默认的硬盘模式[AHCI][1]

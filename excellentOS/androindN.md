@@ -7,9 +7,7 @@
 * 全能工具箱(replace following)
 	* SD Maid
 	* 应用备份还原
-	* 智能锁专业版
-	* 二维码
-  * 通知管理
+	* ES应用锁
 
 ### Accessories
 * 全能手势
@@ -49,7 +47,6 @@
 ### Download
 * AMD Pro
 * ES文件浏览器
-* 迅雷
 
 ### English
 * 多说英语
@@ -92,6 +89,7 @@
 * Pinterest
 * Segmentfault
 * zSMTH
+* Flipboard
 
 ### Jobs
 * 智联招聘
@@ -123,6 +121,7 @@
 * openvpn
 * hap
 * tiny
+* 康师傅云免流
 
 ### NetSchool
 * 网易公开课
@@ -144,10 +143,11 @@
 * 多看阅读
 * Pocket
 * WPS Office
+* Adobe Acrobat
 
 ### Remote
 * juiceSSH # ssh
-* ES文件浏览器	# samba,hiwifi
+* ES文件浏览器	# samba,ftp,云盘
 * TeamViewer
 * AirDroid
 * Pushbulet
@@ -171,6 +171,7 @@
 ### Text
 * universal copy
 * 验证码助手
+* ClipBoard Plus
 
 ### Xposed
 * Xposed安装器
@@ -182,7 +183,6 @@
 * PerfectColorBar
 * 安卓N新特性模块
 * 重力工具箱
-* unicon图标随便换
 * 隐藏锁屏通知
 * 阻止创建快捷方式
 * 阻止运行
