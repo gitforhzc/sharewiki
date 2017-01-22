@@ -1,5 +1,16 @@
 協作版本系統（Concurrent Versions System）
 # git
+* Git
+	> * [progit-zh-v2.1.1](https://www.gitbook.com/book/bingohuang/progit2/details)
+	> * [git](http://www.worldhello.net/gotgit/)  
+
+* Github
+	> * [gotgithub](http://www.worldhello.net/gotgithub/)  
+
+* Extension:
+	> * [GitBook](https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html)
+	> * GitPage
+
 ## git中文乱码
 ### 原因
 

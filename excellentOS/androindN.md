@@ -2,17 +2,19 @@
 	all of these backed up on Google Drive and mobile disk
 ### Manager
 * 绿色守护
+* 黑域
 * 岛island
 * iBattery / 智能网络xposed
-* 全能工具箱(replace following)
-	* SD Maid
-	* 应用备份还原
-	* ES应用锁
+
 
 ### Accessories
 * 全能手势
-* Easy Voice Recorder
+* 录音器（索尼）
 * BlipBlip
+* ES应用锁
+* 锤子bigbang
+* 悬浮菜单
+* Cortana
 
 ### App Market
 * Google play store
@@ -27,7 +29,7 @@
 * wiki
 * chrome
 * flynx
-* via浏览器
+* 夸克浏览器
 * hermit
 
 ### Chinese
@@ -158,7 +160,7 @@
 * Authenticator
 
 ### Transportation
-* 百度地图
+* 高德地图
 * 车来了
 * 12306
 * Uber
@@ -170,7 +172,7 @@
 
 ### Text
 * universal copy
-* 验证码助手
+* 验证码复制器
 * ClipBoard Plus
 
 ### Xposed
@@ -194,4 +196,6 @@
 ### Wifi
 * 极路由
 * wifi万能钥匙
+* 大冲流量
+* 花生地铁wifi
 * wifi密码查看器

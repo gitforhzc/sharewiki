@@ -1,3 +1,9 @@
+# Vim
+	> * [鸟哥私房菜-Vim](http://linux.vbird.org/linux_basic/0310vi.php)  
+
+# Markdown  
+	> * [markdown语法说明(简体中文版)](http://wowubuntu.com/markdown/#philosophy)
+
 # atom
 ## install
 ```

@@ -13,3 +13,7 @@ https://docs.docker.com/v1.8/reference/builder/
 
 # best practices
 https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
+1. WordPress
+2. Hexo
+3. GitLab
+4. Shadowsocks
