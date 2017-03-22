@@ -100,9 +100,3 @@ $git pull origin master
 
 ## git submodule
 http://www.kafeitu.me/git/2012/03/27/git-submodule.html
-
-
-## warning: LF will be replaced by CRLF in README.txt.  
-In Unix systems the end of a line is represented with a line feed (LF). In windows a line is represented with a carriage return (CR) and a line feed (LF) thus (CRLF). when you get code from git that was uploaded from a unix system they will only have an LF.
-If you want to turn this warning off, type this in the git command line   
-> $ git config core.autoctlf true
