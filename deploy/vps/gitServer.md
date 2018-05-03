@@ -8,7 +8,7 @@ official:https://github.com/
 ## private git server
 ### SCM Manager(Windows)
 official:https://www.scm-manager.org/
-HowTodohttp://www.cnblogs.com/lwme/archive/2012/12/25/configuring-git-server-and-client-on-windows.html
+HowTodo:http://www.cnblogs.com/lwme/archive/2012/12/25/configuring-git-server-and-client-on-windows.html
 
 ### GitLab(Linux)
 official:https://about.gitlab.com/
