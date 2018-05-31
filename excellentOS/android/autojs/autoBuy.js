@@ -15,13 +15,7 @@ var items = {
     "容量" : "64GB",
 }
 */
-
-//显示调试信息开关
-var isDebug = false;
-function debug(){
-    console.show();
-    
-}
+module.exports = autoBuy;
 
 function autoBuy(shopName){
     if (shopName == "xm"){
@@ -162,4 +156,3 @@ function close(timeout){
     }
 }
 
-module.exports = autoBuy;
