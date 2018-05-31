@@ -7,14 +7,18 @@
 **5.运行脚本
 **6.切换到第3步的界面
 */
+
+//作为独立程序运行就必须定义items，格式如下
 /*
 //自定义购买选项
 var items = {
-    "版本" : "6GB+64GB",
-    "颜色" : "极夜黑",
+    "版本" : "3GB+32GB",
+    "颜色" : "浅蓝色",
     "容量" : "64GB",
 }
 */
+
+//作为模块运行，导出函数，依赖主程序loadingAutoBuy.js
 module.exports = autoBuy;
 
 function autoBuy(shopName){
@@ -47,9 +51,6 @@ function ready(){
         toast("请打开小米商城的购买界面");
         waitForPackage(miPackage);
     }        
-    if(isDebug){
-        debug();
-    }
 }
 
 function order(){
@@ -155,4 +156,5 @@ function close(timeout){
         toastLog("关闭异常，请手动关闭");
     }
 }
+
 
