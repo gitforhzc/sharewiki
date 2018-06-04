@@ -134,7 +134,7 @@ function optionSet(timeout){
         var btnText = btn.text();
         if (btnText == "确定" || btnText == "加入购物车"){
             btn.click();
-        }else if(btnText == "到货通知"){
+        }else if(btnText == "到货通知" || btnText == "暂时缺货"){
             outOfStock("", "");
         }
     }
