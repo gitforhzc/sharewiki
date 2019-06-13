@@ -1,5 +1,7 @@
-centos7 is running on win10-virtualbox
 ## 启用USB 3.0
+* USB driver(if windows7, then install)  
+`install USB driver on windows7`
+
 * [install](https://www.virtualbox.org/wiki/Downloads)  
 `Oracle_VM_VirtualBox_Extension_Pack`
 
@@ -11,10 +13,7 @@ centos7 is running on win10-virtualbox
   3. reboot  
   `sudo reboot`
 
-* USB driver(if windows7, then install)  
-`install USB driver on windows7`
-
-## [调整VirtualBox硬盘大小](http://blog.sina.com.cn/s/blog_62c89b450101lo91.html)
+## 调整VirtualBox硬盘大小
 1. 添加VBoxManage环境变量  
 ` C:\Program Files\Oracle\VirtualBox`
 
@@ -24,7 +23,7 @@ centos7 is running on win10-virtualbox
 3. 调整虚拟硬盘大小为64G  
 ` VBoxManage modifyhd 'uuid' –-resize 65536`
 
-4. 重新启动virtualbox  
+4. 重新启动Virtualbox  
 
 ## NAT端口转发
 ### 为什么要为virtualbox配置端口映射？
@@ -35,11 +34,11 @@ centos7 is running on win10-virtualbox
 然后新增一条记录：
 其中，名称随便填，协议选择TCP，主机IP和子系统IP不填，主机端口填（XXXX），子系统端口填（22）。
 
-### 与虚拟机连接连接的一些实例
+### 与虚拟机连接的一些实例
 为什么需要和虚拟机连接呢？首先通过shell管理服务器的时候我们就需要和虚拟机里的服务器通过ssh连接。
 
 ### 参考
-[1] 为virtualbox配置端口映射: http://www.jianshu.com/p/573cf2ea4da9  
+[1] 为Virtualbox配置端口映射: http://www.jianshu.com/p/573cf2ea4da9 
 [2] VirtualBox设置NAT端口映射: http://forum.ubuntu.org.cn/viewtopic.php?f=65&t=382161  
 [3] 安装和使用Linux花生壳服务: http://service.oray.com/question/116.html  
 [4] VirtualBox中的四种网络连接方式: http://www.jianshu.com/p/f59a0695b164

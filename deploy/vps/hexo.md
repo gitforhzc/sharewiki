@@ -11,7 +11,6 @@
 ## getSource
 ```
 git clone https://github.com/gitforhzc/gitforhzc.github.io.git
-git clone https://github.com/gitforhzc/gitforhzc.github.io.git --branch theme ./themes/next/
 ```
 
 ## install hexo dependencies

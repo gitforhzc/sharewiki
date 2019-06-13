@@ -5,7 +5,7 @@
 2. access your GitHubPages to https://username.github.io
 ```
 for example:  
-my username of GitHub account is gitforhzc, now do two things:  
+my username of GitHub account is gitforhzc, now do the following:  
     1. new repository named gitforhzc.github.io
     2. create index.html which is to show home page
     3. open browser and access https://gitforhzc.github.io
@@ -51,10 +51,10 @@ vim ./source/_draft/.../title.*
 hexo publish title  
 ```
 
-
 ### generate
 cd 到你的init目录，执行如下命令，生成静态页面至./public/目录  
 `hexo generate`
+
 ### debug
 执行如下命令，启动本地服务，进行文章预览调试。  
 `hexo server`  
@@ -91,7 +91,6 @@ hexo clean
 hexo generate --deploy
 ```
 
-
 ### backupONbranch
 #### hexo source code
 ```
@@ -101,18 +100,7 @@ git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
 git checkout -b hexo
 git add .
 git commit -m 'backup hexo source'
-git push origin hexo
-```
-#### themes
-```
-cd ./themes/next
-git init
-git remote add origin git@github.com:gitforhzc/gitforhzc.github.io
-git checkout -b theme
-git add .
-git commit -m 'backup theme source'
-git push origin theme
-
+git push -u origin hexo
 ```
 
 ### Hexo自动部署到Github
